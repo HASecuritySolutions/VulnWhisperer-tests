@@ -1,0 +1,934 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+176.28.50.165,vulnweb.com,,,10.0,High,"Mitigation","OS End Of Life Detection","OS End Of Life Detection
+
+  The Operating System on the remote host has reached the end of life and should
+  not be used anymore.","The ""Ubuntu"" Operating System on the remote host has reached the end of life.
+
+CPE:               cpe:/o:canonical:ubuntu_linux:10.04
+Installed version,
+build or SP:       10.04
+EOL date:          2015-04-30
+EOL info:          https://wiki.ubuntu.com/Releases",1.3.6.1.4.1.25623.1.0.103674,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,3dc89d95-01c6-4a6d-a999-eb06a4605d08,"","","","","
+Details:
+OS End Of Life Detection
+(OID: 1.3.6.1.4.1.25623.1.0.103674)
+Version used: $Revision: 8927 $
+","Product: cpe:/o:canonical:ubuntu_linux:10.04
+Method: OS Detection Consolidation and Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.105937)
+","","",""
+176.28.50.165,vulnweb.com,465,tcp,5.4,Medium,"Mitigation","SSL/TLS: Report Anonymous Cipher Suites","This routine reports all 'Anonymous' SSL/TLS cipher suites accepted by a service.","'Anonymous' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_RC4_128_MD5
+
+'Anonymous' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_AES_128_CBC_SHA
+TLS_DH_anon_WITH_AES_256_CBC_SHA
+TLS_DH_anon_WITH_RC4_128_MD5",1.3.6.1.4.1.25623.1.0.108147,"CVE-2007-1858, CVE-2014-0351",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,32d51c10-af54-4140-add1-6d0fdcef2e6b,"This could allow remote attackers to obtain sensitive information
+  or have other, unspecified impacts.","The configuration of this services should be changed so
+  that it does not accept the listed 'Anonymous' cipher suites anymore.
+
+  Please see the references for more resources supporting you in this task.","","Services supporting 'Anonymous' cipher suites could allow a client to negotiate a
+  SSL/TLS connection to the host without any authentication of the remote endpoint.","
+Details:
+SSL/TLS: Report 'Anonymous' Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.108147)
+Version used: $Revision: 5994 $
+","","28482,  69754","CB-K14/0058, DFN-CERT-2014-0049, DFN-CERT-2012-0442","https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/"
+176.28.50.165,vulnweb.com,465,tcp,5.0,Medium,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2013-11-09 10:32:06.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+serial ....: 509CDBA6
+valid from : 2012-11-09 10:32:06 UTC
+valid until: 2013-11-09 10:32:06 UTC
+fingerprint (SHA-1): E56C82EE6205DD93BF17E938356E70BAA1719167
+fingerprint (SHA-256): A08292DA525574E16B137DD0B6C0814030CF3DBAA72132455DC385DFA7F2D988",1.3.6.1.4.1.25623.1.0.103955,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,af450981-db51-46e2-8cd7-ebad1bb7de21,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: $Revision: 11103 $
+","","","",""
+176.28.50.165,vulnweb.com,110,tcp,5.0,Medium,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2013-11-09 10:32:06.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+serial ....: 509CDBA6
+valid from : 2012-11-09 10:32:06 UTC
+valid until: 2013-11-09 10:32:06 UTC
+fingerprint (SHA-1): E56C82EE6205DD93BF17E938356E70BAA1719167
+fingerprint (SHA-256): A08292DA525574E16B137DD0B6C0814030CF3DBAA72132455DC385DFA7F2D988",1.3.6.1.4.1.25623.1.0.103955,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,9da4273e-63f0-4ba7-b451-0bb0639abd87,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: $Revision: 11103 $
+","","","",""
+176.28.50.165,vulnweb.com,993,tcp,5.0,Medium,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2013-11-09 10:32:06.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+serial ....: 509CDBA6
+valid from : 2012-11-09 10:32:06 UTC
+valid until: 2013-11-09 10:32:06 UTC
+fingerprint (SHA-1): E56C82EE6205DD93BF17E938356E70BAA1719167
+fingerprint (SHA-256): A08292DA525574E16B137DD0B6C0814030CF3DBAA72132455DC385DFA7F2D988",1.3.6.1.4.1.25623.1.0.103955,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,ba02a78c-baea-4f73-8bf8-567182c79798,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: $Revision: 11103 $
+","","","",""
+176.28.50.165,vulnweb.com,995,tcp,5.0,Medium,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2013-11-09 10:32:06.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+serial ....: 509CDBA6
+valid from : 2012-11-09 10:32:06 UTC
+valid until: 2013-11-09 10:32:06 UTC
+fingerprint (SHA-1): E56C82EE6205DD93BF17E938356E70BAA1719167
+fingerprint (SHA-256): A08292DA525574E16B137DD0B6C0814030CF3DBAA72132455DC385DFA7F2D988",1.3.6.1.4.1.25623.1.0.103955,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,2fafe364-5c6e-4ad2-9a99-df268023a46b,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: $Revision: 11103 $
+","","","",""
+176.28.50.165,vulnweb.com,25,tcp,5.0,Medium,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2013-11-09 10:32:06.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+serial ....: 509CDBA6
+valid from : 2012-11-09 10:32:06 UTC
+valid until: 2013-11-09 10:32:06 UTC
+fingerprint (SHA-1): E56C82EE6205DD93BF17E938356E70BAA1719167
+fingerprint (SHA-256): A08292DA525574E16B137DD0B6C0814030CF3DBAA72132455DC385DFA7F2D988",1.3.6.1.4.1.25623.1.0.103955,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,7ee4c09d-8683-4adc-9312-bbf7a611b3ee,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: $Revision: 11103 $
+","","","",""
+176.28.50.165,vulnweb.com,143,tcp,5.0,Medium,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2013-11-09 10:32:06.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+serial ....: 509CDBA6
+valid from : 2012-11-09 10:32:06 UTC
+valid until: 2013-11-09 10:32:06 UTC
+fingerprint (SHA-1): E56C82EE6205DD93BF17E938356E70BAA1719167
+fingerprint (SHA-256): A08292DA525574E16B137DD0B6C0814030CF3DBAA72132455DC385DFA7F2D988",1.3.6.1.4.1.25623.1.0.103955,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,cc7b14b2-4ac5-4e87-8d44-f0870053b6be,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: $Revision: 11103 $
+","","","",""
+176.28.50.165,vulnweb.com,110,tcp,4.8,Medium,"Mitigation","POP3 Unencrypted Cleartext Login","The remote host is running a POP3 daemon that allows cleartext logins over
+  unencrypted connections.
+
+  NOTE: Depending on the POP3 server configuration valid credentials needs to be given to the settings of
+  'Login configurations' OID: 1.3.6.1.4.1.25623.1.0.10870.","The remote POP3 server accepts logins via the following cleartext authentication mechanisms over unencrypted connections:
+
+SASL LOGIN CRAM-MD5 PLAIN
+USER
+
+The remote POP3 server supports the 'STLS' command but isn't enforcing the use of it for the cleartext authentication mechanisms.",1.3.6.1.4.1.25623.1.0.15855,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,73d904eb-a2a3-421e-9741-ede905d6358b,"An attacker can uncover user names and passwords by sniffing traffic to the POP3
+  daemon if a less secure authentication mechanism (eg, USER command, AUTH PLAIN, AUTH LOGIN) is used.","Configure the remote server to always enforce encrypted connections via
+  SSL/TLS with the 'STLS' command.","","","
+Details:
+POP3 Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.15855)
+Version used: $Revision: 13459 $
+","","","","OSVDB:3119, http://www.ietf.org/rfc/rfc2222.txt, http://www.ietf.org/rfc/rfc2595.txt"
+176.28.50.165,vulnweb.com,25,tcp,4.8,Medium,"Mitigation","SMTP Unencrypted Cleartext Login","The remote host is running a SMTP server that allows cleartext logins over
+  unencrypted connections.","The remote SMTP server accepts logins via the following cleartext authentication mechanisms over unencrypted connections:
+
+LOGIN
+PLAIN
+
+The remote SMTP server supports the 'STARTTLS' command but isn't enforcing the use of it for the cleartext authentication mechanisms.",1.3.6.1.4.1.25623.1.0.108530,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,2d627a26-c7ab-4d9e-b4ff-8527c99369a4,"An attacker can uncover login names and passwords by sniffing traffic to the
+  SMTP server.","Enable SMTPS or enforce the connection via the 'STARTTLS' command. Please see
+  the manual of the SMTP server for more information.","","","Evaluates from previously collected info if a non SMTPS enabled SMTP server
+  is providing the 'PLAIN' or 'LOGIN' authentication methods without sending the 'STARTTLS' command first.
+Details:
+SMTP Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.108530)
+Version used: $Revision: 13461 $
+","","","",""
+176.28.50.165,vulnweb.com,143,tcp,4.8,Medium,"Mitigation","IMAP Unencrypted Cleartext Login","The remote host is running an IMAP daemon that allows cleartext logins over
+  unencrypted connections.
+
+  NOTE: Valid credentials needs to given to the settings of 'Login configurations' OID: 1.3.6.1.4.1.25623.1.0.10870.","The remote IMAP server accepts logins via the following cleartext authentication mechanisms over unencrypted connections:
+
+AUTH=PLAIN
+
+The remote IMAP server supports the 'STARTTLS' command but isn't enforcing the use of it for the cleartext authentication mechanisms.",1.3.6.1.4.1.25623.1.0.15856,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,96742cdc-4d06-473f-94ac-d9bcf8f44ec6,"An attacker can uncover user names and passwords by sniffing traffic to the IMAP
+  daemon if a less secure authentication mechanism (eg, LOGIN command, AUTH=PLAIN, AUTH=LOGIN) is used.","Configure the remote server to always enforce encrypted connections via
+  SSL/TLS with the 'STARTTLS' command.","","","
+Details:
+IMAP Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.15856)
+Version used: $Revision: 13463 $
+","","","","OSVDB:3119, http://www.ietf.org/rfc/rfc2222.txt, http://www.ietf.org/rfc/rfc2595.txt"
+176.28.50.165,vulnweb.com,21,tcp,4.8,Medium,"Mitigation","FTP Unencrypted Cleartext Login","The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.","The remote FTP service accepts logins without a previous sent 'AUTH TLS' command. Response(s):
+
+Anonymous sessions:     331 Password required for anonymous
+Non-anonymous sessions: 331 Password required for openvas-vt",1.3.6.1.4.1.25623.1.0.108528,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,d2c45ce1-01b0-4b7a-afca-2be597c0f8b1,"An attacker can uncover login names and passwords by sniffing traffic to the
+  FTP service.","Enable FTPS or enforce the connection via the 'AUTH TLS' command. Please see
+  the manual of the FTP service for more information.","","","Tries to login to a non FTPS enabled FTP service without sending a
+  'AUTH TLS' command first and checks if the service is accepting the login without enforcing the use of
+  the 'AUTH TLS' command.
+Details:
+FTP Unencrypted Cleartext Login
+(OID: 1.3.6.1.4.1.25623.1.0.108528)
+Version used: $Revision: 13611 $
+","","","",""
+176.28.50.165,vulnweb.com,995,tcp,4.3,Medium,"VendorFix","SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK)","This host is accepting 'RSA_EXPORT' cipher suites
+  and is prone to man in the middle attack.","'RSA_EXPORT' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+
+'RSA_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5",1.3.6.1.4.1.25623.1.0.805142,"CVE-2015-0204",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,a951f094-7bf8-4847-b116-4747312a1b6f,"Successful exploitation will allow remote
+  attacker to downgrade the security of a session to use 'RSA_EXPORT' cipher suites,
+  which are significantly weaker than non-export cipher suites. This may allow a
+  man-in-the-middle attacker to more easily break the encryption and monitor
+  or tamper with the encrypted stream.","- Remove support for 'RSA_EXPORT' cipher
+  suites from the service.
+
+  - If running OpenSSL update to version 0.9.8zd or 1.0.0p
+  or 1.0.1k or later.","- Hosts accepting 'RSA_EXPORT' cipher suites
+
+  - OpenSSL version before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k.","Flaw is due to improper handling RSA
+  temporary keys in a non-export RSA key exchange cipher suite.","Check previous collected cipher suites saved in the KB.
+Details:
+SSL/TLS: RSA Temporary Key Handling 'RSA_EXPORT' Downgrade Issue (FREAK)
+(OID: 1.3.6.1.4.1.25623.1.0.805142)
+Version used: $Revision: 11872 $
+","","71936","CB-K18/0799, CB-K16/1289, CB-K16/1096, CB-K15/1751, CB-K15/1266, CB-K15/0850, CB-K15/0764, CB-K15/0720, CB-K15/0548, CB-K15/0526, CB-K15/0509, CB-K15/0493, CB-K15/0384, CB-K15/0365, CB-K15/0364, CB-K15/0302, CB-K15/0192, CB-K15/0016, DFN-CERT-2018-1408, DFN-CERT-2016-1372, DFN-CERT-2016-1164, DFN-CERT-2016-0388, DFN-CERT-2015-1853, DFN-CERT-2015-1332, DFN-CERT-2015-0884, DFN-CERT-2015-0800, DFN-CERT-2015-0758, DFN-CERT-2015-0567, DFN-CERT-2015-0544, DFN-CERT-2015-0530, DFN-CERT-2015-0396, DFN-CERT-2015-0375, DFN-CERT-2015-0374, DFN-CERT-2015-0305, DFN-CERT-2015-0199, DFN-CERT-2015-0021","https://freakattack.com, http://secpod.org/blog/?p=3818, http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html, https://www.openssl.org"
+176.28.50.165,vulnweb.com,993,tcp,4.3,Medium,"VendorFix","SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK)","This host is accepting 'RSA_EXPORT' cipher suites
+  and is prone to man in the middle attack.","'RSA_EXPORT' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+
+'RSA_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5",1.3.6.1.4.1.25623.1.0.805142,"CVE-2015-0204",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,8a8dccbb-cccf-4f78-8c4f-a2993a82399b,"Successful exploitation will allow remote
+  attacker to downgrade the security of a session to use 'RSA_EXPORT' cipher suites,
+  which are significantly weaker than non-export cipher suites. This may allow a
+  man-in-the-middle attacker to more easily break the encryption and monitor
+  or tamper with the encrypted stream.","- Remove support for 'RSA_EXPORT' cipher
+  suites from the service.
+
+  - If running OpenSSL update to version 0.9.8zd or 1.0.0p
+  or 1.0.1k or later.","- Hosts accepting 'RSA_EXPORT' cipher suites
+
+  - OpenSSL version before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k.","Flaw is due to improper handling RSA
+  temporary keys in a non-export RSA key exchange cipher suite.","Check previous collected cipher suites saved in the KB.
+Details:
+SSL/TLS: RSA Temporary Key Handling 'RSA_EXPORT' Downgrade Issue (FREAK)
+(OID: 1.3.6.1.4.1.25623.1.0.805142)
+Version used: $Revision: 11872 $
+","","71936","CB-K18/0799, CB-K16/1289, CB-K16/1096, CB-K15/1751, CB-K15/1266, CB-K15/0850, CB-K15/0764, CB-K15/0720, CB-K15/0548, CB-K15/0526, CB-K15/0509, CB-K15/0493, CB-K15/0384, CB-K15/0365, CB-K15/0364, CB-K15/0302, CB-K15/0192, CB-K15/0016, DFN-CERT-2018-1408, DFN-CERT-2016-1372, DFN-CERT-2016-1164, DFN-CERT-2016-0388, DFN-CERT-2015-1853, DFN-CERT-2015-1332, DFN-CERT-2015-0884, DFN-CERT-2015-0800, DFN-CERT-2015-0758, DFN-CERT-2015-0567, DFN-CERT-2015-0544, DFN-CERT-2015-0530, DFN-CERT-2015-0396, DFN-CERT-2015-0375, DFN-CERT-2015-0374, DFN-CERT-2015-0305, DFN-CERT-2015-0199, DFN-CERT-2015-0021","https://freakattack.com, http://secpod.org/blog/?p=3818, http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html, https://www.openssl.org"
+176.28.50.165,vulnweb.com,143,tcp,4.3,Medium,"VendorFix","SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK)","This host is accepting 'RSA_EXPORT' cipher suites
+  and is prone to man in the middle attack.","'RSA_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5",1.3.6.1.4.1.25623.1.0.805142,"CVE-2015-0204",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,1da0e3c3-dbc0-408a-aa81-7ab80b8b4c3c,"Successful exploitation will allow remote
+  attacker to downgrade the security of a session to use 'RSA_EXPORT' cipher suites,
+  which are significantly weaker than non-export cipher suites. This may allow a
+  man-in-the-middle attacker to more easily break the encryption and monitor
+  or tamper with the encrypted stream.","- Remove support for 'RSA_EXPORT' cipher
+  suites from the service.
+
+  - If running OpenSSL update to version 0.9.8zd or 1.0.0p
+  or 1.0.1k or later.","- Hosts accepting 'RSA_EXPORT' cipher suites
+
+  - OpenSSL version before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k.","Flaw is due to improper handling RSA
+  temporary keys in a non-export RSA key exchange cipher suite.","Check previous collected cipher suites saved in the KB.
+Details:
+SSL/TLS: RSA Temporary Key Handling 'RSA_EXPORT' Downgrade Issue (FREAK)
+(OID: 1.3.6.1.4.1.25623.1.0.805142)
+Version used: $Revision: 11872 $
+","","71936","CB-K18/0799, CB-K16/1289, CB-K16/1096, CB-K15/1751, CB-K15/1266, CB-K15/0850, CB-K15/0764, CB-K15/0720, CB-K15/0548, CB-K15/0526, CB-K15/0509, CB-K15/0493, CB-K15/0384, CB-K15/0365, CB-K15/0364, CB-K15/0302, CB-K15/0192, CB-K15/0016, DFN-CERT-2018-1408, DFN-CERT-2016-1372, DFN-CERT-2016-1164, DFN-CERT-2016-0388, DFN-CERT-2015-1853, DFN-CERT-2015-1332, DFN-CERT-2015-0884, DFN-CERT-2015-0800, DFN-CERT-2015-0758, DFN-CERT-2015-0567, DFN-CERT-2015-0544, DFN-CERT-2015-0530, DFN-CERT-2015-0396, DFN-CERT-2015-0375, DFN-CERT-2015-0374, DFN-CERT-2015-0305, DFN-CERT-2015-0199, DFN-CERT-2015-0021","https://freakattack.com, http://secpod.org/blog/?p=3818, http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html, https://www.openssl.org"
+176.28.50.165,vulnweb.com,110,tcp,4.3,Medium,"VendorFix","SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK)","This host is accepting 'RSA_EXPORT' cipher suites
+  and is prone to man in the middle attack.","'RSA_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5",1.3.6.1.4.1.25623.1.0.805142,"CVE-2015-0204",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,8f00dc94-5001-4a7c-9963-39b810328de5,"Successful exploitation will allow remote
+  attacker to downgrade the security of a session to use 'RSA_EXPORT' cipher suites,
+  which are significantly weaker than non-export cipher suites. This may allow a
+  man-in-the-middle attacker to more easily break the encryption and monitor
+  or tamper with the encrypted stream.","- Remove support for 'RSA_EXPORT' cipher
+  suites from the service.
+
+  - If running OpenSSL update to version 0.9.8zd or 1.0.0p
+  or 1.0.1k or later.","- Hosts accepting 'RSA_EXPORT' cipher suites
+
+  - OpenSSL version before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k.","Flaw is due to improper handling RSA
+  temporary keys in a non-export RSA key exchange cipher suite.","Check previous collected cipher suites saved in the KB.
+Details:
+SSL/TLS: RSA Temporary Key Handling 'RSA_EXPORT' Downgrade Issue (FREAK)
+(OID: 1.3.6.1.4.1.25623.1.0.805142)
+Version used: $Revision: 11872 $
+","","71936","CB-K18/0799, CB-K16/1289, CB-K16/1096, CB-K15/1751, CB-K15/1266, CB-K15/0850, CB-K15/0764, CB-K15/0720, CB-K15/0548, CB-K15/0526, CB-K15/0509, CB-K15/0493, CB-K15/0384, CB-K15/0365, CB-K15/0364, CB-K15/0302, CB-K15/0192, CB-K15/0016, DFN-CERT-2018-1408, DFN-CERT-2016-1372, DFN-CERT-2016-1164, DFN-CERT-2016-0388, DFN-CERT-2015-1853, DFN-CERT-2015-1332, DFN-CERT-2015-0884, DFN-CERT-2015-0800, DFN-CERT-2015-0758, DFN-CERT-2015-0567, DFN-CERT-2015-0544, DFN-CERT-2015-0530, DFN-CERT-2015-0396, DFN-CERT-2015-0375, DFN-CERT-2015-0374, DFN-CERT-2015-0305, DFN-CERT-2015-0199, DFN-CERT-2015-0021","https://freakattack.com, http://secpod.org/blog/?p=3818, http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html, https://www.openssl.org"
+176.28.50.165,vulnweb.com,25,tcp,4.3,Medium,"VendorFix","SSL/TLS: DHE_EXPORT Man in the Middle Security Bypass Vulnerability (LogJam)","This host is accepting 'DHE_EXPORT' cipher suites
+  and is prone to man in the middle attack.","'DHE_EXPORT' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+
+'DHE_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5",1.3.6.1.4.1.25623.1.0.805188,"CVE-2015-4000",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,8bb69a13-2161-403f-8c2d-fc21cb659188,"Successful exploitation will allow a
+  man-in-the-middle attacker to downgrade the security of a TLS session to
+  512-bit export-grade cryptography, which is significantly weaker, allowing
+  the attacker to more easily break the encryption and monitor or tamper with
+  the encrypted stream.","- Remove support for 'DHE_EXPORT' cipher
+  suites from the service
+
+  - If running OpenSSL updateto version 1.0.2b or 1.0.1n or later.","- Hosts accepting 'DHE_EXPORT' cipher suites
+
+  - OpenSSL version before 1.0.2b and 1.0.1n","Flaw is triggered when handling
+  Diffie-Hellman key exchanges defined in the 'DHE_EXPORT' cipher suites.","Check previous collected cipher suites saved in the KB.
+Details:
+SSL/TLS: 'DHE_EXPORT' Man in the Middle Security Bypass Vulnerability (LogJa...
+(OID: 1.3.6.1.4.1.25623.1.0.805188)
+Version used: $Revision: 11872 $
+","","74733","CB-K16/1593, CB-K16/1552, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0964, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0877, CB-K15/0834, CB-K15/0802, CB-K15/0733, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1016, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0925, DFN-CERT-2015-0879, DFN-CERT-2015-0844, DFN-CERT-2015-0737","https://weakdh.org, https://weakdh.org/imperfect-forward-secrecy.pdf, http://openwall.com/lists/oss-security/2015/05/20/8, https://blog.cloudflare.com/logjam-the-latest-tls-vulnerability-explained, https://www.openssl.org/blog/blog/2015/05/20/logjam-freak-upcoming-changes"
+176.28.50.165,vulnweb.com,25,tcp,4.3,Medium,"VendorFix","SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK)","This host is accepting 'RSA_EXPORT' cipher suites
+  and is prone to man in the middle attack.","'RSA_EXPORT' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+
+'RSA_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5",1.3.6.1.4.1.25623.1.0.805142,"CVE-2015-0204",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,e84de84f-186d-48a5-9fd0-279e410ba639,"Successful exploitation will allow remote
+  attacker to downgrade the security of a session to use 'RSA_EXPORT' cipher suites,
+  which are significantly weaker than non-export cipher suites. This may allow a
+  man-in-the-middle attacker to more easily break the encryption and monitor
+  or tamper with the encrypted stream.","- Remove support for 'RSA_EXPORT' cipher
+  suites from the service.
+
+  - If running OpenSSL update to version 0.9.8zd or 1.0.0p
+  or 1.0.1k or later.","- Hosts accepting 'RSA_EXPORT' cipher suites
+
+  - OpenSSL version before 0.9.8zd, 1.0.0 before 1.0.0p, and 1.0.1 before 1.0.1k.","Flaw is due to improper handling RSA
+  temporary keys in a non-export RSA key exchange cipher suite.","Check previous collected cipher suites saved in the KB.
+Details:
+SSL/TLS: RSA Temporary Key Handling 'RSA_EXPORT' Downgrade Issue (FREAK)
+(OID: 1.3.6.1.4.1.25623.1.0.805142)
+Version used: $Revision: 11872 $
+","","71936","CB-K18/0799, CB-K16/1289, CB-K16/1096, CB-K15/1751, CB-K15/1266, CB-K15/0850, CB-K15/0764, CB-K15/0720, CB-K15/0548, CB-K15/0526, CB-K15/0509, CB-K15/0493, CB-K15/0384, CB-K15/0365, CB-K15/0364, CB-K15/0302, CB-K15/0192, CB-K15/0016, DFN-CERT-2018-1408, DFN-CERT-2016-1372, DFN-CERT-2016-1164, DFN-CERT-2016-0388, DFN-CERT-2015-1853, DFN-CERT-2015-1332, DFN-CERT-2015-0884, DFN-CERT-2015-0800, DFN-CERT-2015-0758, DFN-CERT-2015-0567, DFN-CERT-2015-0544, DFN-CERT-2015-0530, DFN-CERT-2015-0396, DFN-CERT-2015-0375, DFN-CERT-2015-0374, DFN-CERT-2015-0305, DFN-CERT-2015-0199, DFN-CERT-2015-0021","https://freakattack.com, http://secpod.org/blog/?p=3818, http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html, https://www.openssl.org"
+176.28.50.165,vulnweb.com,995,tcp,4.3,Medium,"Mitigation","SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection","It was possible to detect the usage of the
+  deprecated SSLv2 and/or SSLv3 protocol on this system.","In addition to TLSv1.0+ the service is also providing the deprecated SSLv2 and SSLv3 protocols and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Weak and Supported Ciphers' (OID: 1.3.6.1.4.1.25623.1.0.802067) NVT.",1.3.6.1.4.1.25623.1.0.111012,"CVE-2016-0800, CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,02d88cfc-b139-4d9f-82d3-ef53ce79969c,"An attacker might be able to use the known
+  cryptographic flaws to eavesdrop the connection between clients and the service
+  to get access to sensitive data transferred within the secured connection.","It is recommended to disable the deprecated
+  SSLv2 and/or SSLv3 protocols in favor of the TLSv1+ protocols. Please see the
+  references for more information.","All services providing an encrypted communication
+  using the SSLv2 and/or SSLv3 protocols.","The SSLv2 and SSLv3 protocols containing
+  known cryptographic flaws like:
+
+  - Padding Oracle On Downgraded Legacy Encryption (POODLE, CVE-2014-3566)
+
+  - Decrypting RSA with Obsolete and Weakened eNcryption (DROWN, CVE-2016-0800)","Check the used protocols of the services
+  provided by this system.
+Details:
+SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.111012)
+Version used: $Revision: 5547 $
+","","","CB-K18/0094, CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1141, CB-K16/1107, CB-K16/1102, CB-K16/0792, CB-K16/0599, CB-K16/0597, CB-K16/0459, CB-K16/0456, CB-K16/0433, CB-K16/0424, CB-K16/0415, CB-K16/0413, CB-K16/0374, CB-K16/0367, CB-K16/0331, CB-K16/0329, CB-K16/0328, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2018-0096, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1216, DFN-CERT-2016-1174, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0841, DFN-CERT-2016-0644, DFN-CERT-2016-0642, DFN-CERT-2016-0496, DFN-CERT-2016-0495, DFN-CERT-2016-0465, DFN-CERT-2016-0459, DFN-CERT-2016-0453, DFN-CERT-2016-0451, DFN-CERT-2016-0415, DFN-CERT-2016-0403, DFN-CERT-2016-0388, DFN-CERT-2016-0360, DFN-CERT-2016-0359, DFN-CERT-2016-0357, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/, https://drownattack.com/, https://www.imperialviolet.org/2014/10/14/poodle.html"
+176.28.50.165,vulnweb.com,993,tcp,4.3,Medium,"Mitigation","SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection","It was possible to detect the usage of the
+  deprecated SSLv2 and/or SSLv3 protocol on this system.","In addition to TLSv1.0+ the service is also providing the deprecated SSLv2 and SSLv3 protocols and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Weak and Supported Ciphers' (OID: 1.3.6.1.4.1.25623.1.0.802067) NVT.",1.3.6.1.4.1.25623.1.0.111012,"CVE-2016-0800, CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,46882e2a-b63f-4168-974d-e209f852eae9,"An attacker might be able to use the known
+  cryptographic flaws to eavesdrop the connection between clients and the service
+  to get access to sensitive data transferred within the secured connection.","It is recommended to disable the deprecated
+  SSLv2 and/or SSLv3 protocols in favor of the TLSv1+ protocols. Please see the
+  references for more information.","All services providing an encrypted communication
+  using the SSLv2 and/or SSLv3 protocols.","The SSLv2 and SSLv3 protocols containing
+  known cryptographic flaws like:
+
+  - Padding Oracle On Downgraded Legacy Encryption (POODLE, CVE-2014-3566)
+
+  - Decrypting RSA with Obsolete and Weakened eNcryption (DROWN, CVE-2016-0800)","Check the used protocols of the services
+  provided by this system.
+Details:
+SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.111012)
+Version used: $Revision: 5547 $
+","","","CB-K18/0094, CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1141, CB-K16/1107, CB-K16/1102, CB-K16/0792, CB-K16/0599, CB-K16/0597, CB-K16/0459, CB-K16/0456, CB-K16/0433, CB-K16/0424, CB-K16/0415, CB-K16/0413, CB-K16/0374, CB-K16/0367, CB-K16/0331, CB-K16/0329, CB-K16/0328, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2018-0096, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1216, DFN-CERT-2016-1174, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0841, DFN-CERT-2016-0644, DFN-CERT-2016-0642, DFN-CERT-2016-0496, DFN-CERT-2016-0495, DFN-CERT-2016-0465, DFN-CERT-2016-0459, DFN-CERT-2016-0453, DFN-CERT-2016-0451, DFN-CERT-2016-0415, DFN-CERT-2016-0403, DFN-CERT-2016-0388, DFN-CERT-2016-0360, DFN-CERT-2016-0359, DFN-CERT-2016-0357, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/, https://drownattack.com/, https://www.imperialviolet.org/2014/10/14/poodle.html"
+176.28.50.165,vulnweb.com,465,tcp,4.3,Medium,"Mitigation","SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection","It was possible to detect the usage of the
+  deprecated SSLv2 and/or SSLv3 protocol on this system.","In addition to TLSv1.0+ the service is also providing the deprecated SSLv3 protocol and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Weak and Supported Ciphers' (OID: 1.3.6.1.4.1.25623.1.0.802067) NVT.",1.3.6.1.4.1.25623.1.0.111012,"CVE-2016-0800, CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,b8de00f0-816a-4020-a307-ef6ad0ef4dc4,"An attacker might be able to use the known
+  cryptographic flaws to eavesdrop the connection between clients and the service
+  to get access to sensitive data transferred within the secured connection.","It is recommended to disable the deprecated
+  SSLv2 and/or SSLv3 protocols in favor of the TLSv1+ protocols. Please see the
+  references for more information.","All services providing an encrypted communication
+  using the SSLv2 and/or SSLv3 protocols.","The SSLv2 and SSLv3 protocols containing
+  known cryptographic flaws like:
+
+  - Padding Oracle On Downgraded Legacy Encryption (POODLE, CVE-2014-3566)
+
+  - Decrypting RSA with Obsolete and Weakened eNcryption (DROWN, CVE-2016-0800)","Check the used protocols of the services
+  provided by this system.
+Details:
+SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.111012)
+Version used: $Revision: 5547 $
+","","","CB-K18/0094, CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1141, CB-K16/1107, CB-K16/1102, CB-K16/0792, CB-K16/0599, CB-K16/0597, CB-K16/0459, CB-K16/0456, CB-K16/0433, CB-K16/0424, CB-K16/0415, CB-K16/0413, CB-K16/0374, CB-K16/0367, CB-K16/0331, CB-K16/0329, CB-K16/0328, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2018-0096, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1216, DFN-CERT-2016-1174, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0841, DFN-CERT-2016-0644, DFN-CERT-2016-0642, DFN-CERT-2016-0496, DFN-CERT-2016-0495, DFN-CERT-2016-0465, DFN-CERT-2016-0459, DFN-CERT-2016-0453, DFN-CERT-2016-0451, DFN-CERT-2016-0415, DFN-CERT-2016-0403, DFN-CERT-2016-0388, DFN-CERT-2016-0360, DFN-CERT-2016-0359, DFN-CERT-2016-0357, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/, https://drownattack.com/, https://www.imperialviolet.org/2014/10/14/poodle.html"
+176.28.50.165,vulnweb.com,25,tcp,4.3,Medium,"Mitigation","SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection","It was possible to detect the usage of the
+  deprecated SSLv2 and/or SSLv3 protocol on this system.","In addition to TLSv1.0+ the service is also providing the deprecated SSLv2 and SSLv3 protocols and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Weak and Supported Ciphers' (OID: 1.3.6.1.4.1.25623.1.0.802067) NVT.",1.3.6.1.4.1.25623.1.0.111012,"CVE-2016-0800, CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,59a03c64-3d3b-4739-b79c-1651e79b816a,"An attacker might be able to use the known
+  cryptographic flaws to eavesdrop the connection between clients and the service
+  to get access to sensitive data transferred within the secured connection.","It is recommended to disable the deprecated
+  SSLv2 and/or SSLv3 protocols in favor of the TLSv1+ protocols. Please see the
+  references for more information.","All services providing an encrypted communication
+  using the SSLv2 and/or SSLv3 protocols.","The SSLv2 and SSLv3 protocols containing
+  known cryptographic flaws like:
+
+  - Padding Oracle On Downgraded Legacy Encryption (POODLE, CVE-2014-3566)
+
+  - Decrypting RSA with Obsolete and Weakened eNcryption (DROWN, CVE-2016-0800)","Check the used protocols of the services
+  provided by this system.
+Details:
+SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.111012)
+Version used: $Revision: 5547 $
+","","","CB-K18/0094, CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1141, CB-K16/1107, CB-K16/1102, CB-K16/0792, CB-K16/0599, CB-K16/0597, CB-K16/0459, CB-K16/0456, CB-K16/0433, CB-K16/0424, CB-K16/0415, CB-K16/0413, CB-K16/0374, CB-K16/0367, CB-K16/0331, CB-K16/0329, CB-K16/0328, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2018-0096, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1216, DFN-CERT-2016-1174, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0841, DFN-CERT-2016-0644, DFN-CERT-2016-0642, DFN-CERT-2016-0496, DFN-CERT-2016-0495, DFN-CERT-2016-0465, DFN-CERT-2016-0459, DFN-CERT-2016-0453, DFN-CERT-2016-0451, DFN-CERT-2016-0415, DFN-CERT-2016-0403, DFN-CERT-2016-0388, DFN-CERT-2016-0360, DFN-CERT-2016-0359, DFN-CERT-2016-0357, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.enisa.europa.eu/activities/identity-and-trust/library/deliverables/algorithms-key-sizes-and-parameters-report, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/, https://drownattack.com/, https://www.imperialviolet.org/2014/10/14/poodle.html"
+176.28.50.165,vulnweb.com,995,tcp,4.3,Medium,"Mitigation","SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)","This host is prone to an information disclosure vulnerability.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.802087,"CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,c9df9aa6-7fc1-4903-ab51-99ed347611ea,"Successful exploitation will allow a  man-in-the-middle attackers gain access to the plain text data stream.","Possible Mitigations are:
+
+  - Disable SSLv3
+
+  - Disable cipher suites supporting CBC cipher modes
+
+  - Enable TLS_FALLBACK_SCSV if the service is providing TLSv1.0+","","The flaw is due to the block cipher padding not being deterministic and not covered by the Message Authentication Code","Evaluate previous collected information about this service.
+Details:
+SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerabili...
+(OID: 1.3.6.1.4.1.25623.1.0.802087)
+Version used: $Revision: 11402 $
+","","70574","CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1102, CB-K16/0599, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0642, DFN-CERT-2016-0388, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.openssl.org/~bodo/ssl-poodle.pdf, https://www.imperialviolet.org/2014/10/14/poodle.html, https://www.dfranke.us/posts/2014-10-14-how-poodle-happened.html, http://googleonlinesecurity.blogspot.in/2014/10/this-poodle-bites-exploiting-ssl-30.html"
+176.28.50.165,vulnweb.com,993,tcp,4.3,Medium,"Mitigation","SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)","This host is prone to an information disclosure vulnerability.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.802087,"CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,7e05b990-cdb4-4f5d-a862-f57ac416ae00,"Successful exploitation will allow a  man-in-the-middle attackers gain access to the plain text data stream.","Possible Mitigations are:
+
+  - Disable SSLv3
+
+  - Disable cipher suites supporting CBC cipher modes
+
+  - Enable TLS_FALLBACK_SCSV if the service is providing TLSv1.0+","","The flaw is due to the block cipher padding not being deterministic and not covered by the Message Authentication Code","Evaluate previous collected information about this service.
+Details:
+SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerabili...
+(OID: 1.3.6.1.4.1.25623.1.0.802087)
+Version used: $Revision: 11402 $
+","","70574","CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1102, CB-K16/0599, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0642, DFN-CERT-2016-0388, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.openssl.org/~bodo/ssl-poodle.pdf, https://www.imperialviolet.org/2014/10/14/poodle.html, https://www.dfranke.us/posts/2014-10-14-how-poodle-happened.html, http://googleonlinesecurity.blogspot.in/2014/10/this-poodle-bites-exploiting-ssl-30.html"
+176.28.50.165,vulnweb.com,465,tcp,4.3,Medium,"Mitigation","SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)","This host is prone to an information disclosure vulnerability.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.802087,"CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,89cc5d91-7bfa-4115-8805-247e9f5f945e,"Successful exploitation will allow a  man-in-the-middle attackers gain access to the plain text data stream.","Possible Mitigations are:
+
+  - Disable SSLv3
+
+  - Disable cipher suites supporting CBC cipher modes
+
+  - Enable TLS_FALLBACK_SCSV if the service is providing TLSv1.0+","","The flaw is due to the block cipher padding not being deterministic and not covered by the Message Authentication Code","Evaluate previous collected information about this service.
+Details:
+SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerabili...
+(OID: 1.3.6.1.4.1.25623.1.0.802087)
+Version used: $Revision: 11402 $
+","","70574","CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1102, CB-K16/0599, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0642, DFN-CERT-2016-0388, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.openssl.org/~bodo/ssl-poodle.pdf, https://www.imperialviolet.org/2014/10/14/poodle.html, https://www.dfranke.us/posts/2014-10-14-how-poodle-happened.html, http://googleonlinesecurity.blogspot.in/2014/10/this-poodle-bites-exploiting-ssl-30.html"
+176.28.50.165,vulnweb.com,25,tcp,4.3,Medium,"Mitigation","SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)","This host is prone to an information disclosure vulnerability.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.802087,"CVE-2014-3566",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,26907399-87ee-4bc6-a355-a413127b1eea,"Successful exploitation will allow a  man-in-the-middle attackers gain access to the plain text data stream.","Possible Mitigations are:
+
+  - Disable SSLv3
+
+  - Disable cipher suites supporting CBC cipher modes
+
+  - Enable TLS_FALLBACK_SCSV if the service is providing TLSv1.0+","","The flaw is due to the block cipher padding not being deterministic and not covered by the Message Authentication Code","Evaluate previous collected information about this service.
+Details:
+SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerabili...
+(OID: 1.3.6.1.4.1.25623.1.0.802087)
+Version used: $Revision: 11402 $
+","","70574","CB-K17/1198, CB-K17/1196, CB-K16/1828, CB-K16/1438, CB-K16/1384, CB-K16/1102, CB-K16/0599, CB-K16/0156, CB-K15/1514, CB-K15/1358, CB-K15/1021, CB-K15/0972, CB-K15/0637, CB-K15/0590, CB-K15/0525, CB-K15/0393, CB-K15/0384, CB-K15/0287, CB-K15/0252, CB-K15/0246, CB-K15/0237, CB-K15/0118, CB-K15/0110, CB-K15/0108, CB-K15/0080, CB-K15/0078, CB-K15/0077, CB-K15/0075, CB-K14/1617, CB-K14/1581, CB-K14/1537, CB-K14/1479, CB-K14/1458, CB-K14/1342, CB-K14/1314, CB-K14/1313, CB-K14/1311, CB-K14/1304, CB-K14/1296, DFN-CERT-2017-1238, DFN-CERT-2017-1236, DFN-CERT-2016-1929, DFN-CERT-2016-1527, DFN-CERT-2016-1468, DFN-CERT-2016-1168, DFN-CERT-2016-0884, DFN-CERT-2016-0642, DFN-CERT-2016-0388, DFN-CERT-2016-0171, DFN-CERT-2015-1431, DFN-CERT-2015-1075, DFN-CERT-2015-1026, DFN-CERT-2015-0664, DFN-CERT-2015-0548, DFN-CERT-2015-0404, DFN-CERT-2015-0396, DFN-CERT-2015-0259, DFN-CERT-2015-0254, DFN-CERT-2015-0245, DFN-CERT-2015-0118, DFN-CERT-2015-0114, DFN-CERT-2015-0083, DFN-CERT-2015-0082, DFN-CERT-2015-0081, DFN-CERT-2015-0076, DFN-CERT-2014-1717, DFN-CERT-2014-1680, DFN-CERT-2014-1632, DFN-CERT-2014-1564, DFN-CERT-2014-1542, DFN-CERT-2014-1414, DFN-CERT-2014-1366, DFN-CERT-2014-1354","https://www.openssl.org/~bodo/ssl-poodle.pdf, https://www.imperialviolet.org/2014/10/14/poodle.html, https://www.dfranke.us/posts/2014-10-14-how-poodle-happened.html, http://googleonlinesecurity.blogspot.in/2014/10/this-poodle-bites-exploiting-ssl-30.html"
+176.28.50.165,vulnweb.com,995,tcp,4.3,Medium,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.","'Weak' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566, CVE-2015-2808, CVE-2015-4000",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,b7190f1a-d489-453e-bf39-17cb4262fa30,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: $Revision: 11135 $
+","","","CB-K17/1750, CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977","https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/"
+176.28.50.165,vulnweb.com,993,tcp,4.3,Medium,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.","'Weak' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566, CVE-2015-2808, CVE-2015-4000",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,6e6732e7-c636-4b5a-80ea-613055165c46,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: $Revision: 11135 $
+","","","CB-K17/1750, CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977","https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/"
+176.28.50.165,vulnweb.com,465,tcp,4.3,Medium,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.","'Weak' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DH_anon_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566, CVE-2015-2808, CVE-2015-4000",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,c9c37187-2f5a-4328-848b-e01f311f96e2,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: $Revision: 11135 $
+","","","CB-K17/1750, CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977","https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/"
+176.28.50.165,vulnweb.com,143,tcp,4.3,Medium,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.","'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566, CVE-2015-2808, CVE-2015-4000",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,151edb3a-b72d-4533-92dc-bc5ed0cbb6b7,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: $Revision: 11135 $
+","","","CB-K17/1750, CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977","https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/"
+176.28.50.165,vulnweb.com,110,tcp,4.3,Medium,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port 25/tcp is reported.
+  If too strong cipher suites are configured for this service the alternative would be to fall back to an even more insecure
+  cleartext communication.","'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566, CVE-2015-2808, CVE-2015-4000",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,0d5134ac-2aa7-4672-a3ed-408b0a8ba3c4,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808).
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000).
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak.
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: $Revision: 11135 $
+","","","CB-K17/1750, CB-K16/1593, CB-K16/1552, CB-K16/1102, CB-K16/0617, CB-K16/0599, CB-K16/0168, CB-K16/0121, CB-K16/0090, CB-K16/0030, CB-K15/1751, CB-K15/1591, CB-K15/1550, CB-K15/1517, CB-K15/1514, CB-K15/1464, CB-K15/1442, CB-K15/1334, CB-K15/1269, CB-K15/1136, CB-K15/1090, CB-K15/1059, CB-K15/1022, CB-K15/1015, CB-K15/0986, CB-K15/0964, CB-K15/0962, CB-K15/0932, CB-K15/0927, CB-K15/0926, CB-K15/0907, CB-K15/0901, CB-K15/0896, CB-K15/0889, CB-K15/0877, CB-K15/0850, CB-K15/0849, CB-K15/0834, CB-K15/0827, CB-K15/0802, CB-K15/0764, CB-K15/0733, CB-K15/0667, CB-K14/0935, CB-K13/0942, DFN-CERT-2017-1821, DFN-CERT-2016-1692, DFN-CERT-2016-1648, DFN-CERT-2016-1168, DFN-CERT-2016-0665, DFN-CERT-2016-0642, DFN-CERT-2016-0184, DFN-CERT-2016-0135, DFN-CERT-2016-0101, DFN-CERT-2016-0035, DFN-CERT-2015-1853, DFN-CERT-2015-1679, DFN-CERT-2015-1632, DFN-CERT-2015-1608, DFN-CERT-2015-1542, DFN-CERT-2015-1518, DFN-CERT-2015-1406, DFN-CERT-2015-1341, DFN-CERT-2015-1194, DFN-CERT-2015-1144, DFN-CERT-2015-1113, DFN-CERT-2015-1078, DFN-CERT-2015-1067, DFN-CERT-2015-1038, DFN-CERT-2015-1016, DFN-CERT-2015-1012, DFN-CERT-2015-0980, DFN-CERT-2015-0977, DFN-CERT-2015-0976, DFN-CERT-2015-0960, DFN-CERT-2015-0956, DFN-CERT-2015-0944, DFN-CERT-2015-0937, DFN-CERT-2015-0925, DFN-CERT-2015-0884, DFN-CERT-2015-0881, DFN-CERT-2015-0879, DFN-CERT-2015-0866, DFN-CERT-2015-0844, DFN-CERT-2015-0800, DFN-CERT-2015-0737, DFN-CERT-2015-0696, DFN-CERT-2014-0977","https://www.bsi.bund.de/SharedDocs/Warnmeldungen/DE/CB/warnmeldung_cb-k16-1465_update_6.html, https://bettercrypto.org/, https://mozilla.github.io/server-side-tls/ssl-config-generator/"
+176.28.50.165,vulnweb.com,22,tcp,4.3,Medium,"Mitigation","SSH Weak Encryption Algorithms Supported","The remote SSH server is configured to allow weak encryption algorithms.","The following weak client-to-server encryption algorithms are supported by the remote service:
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se
+
+
+The following weak server-to-client encryption algorithms are supported by the remote service:
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se",1.3.6.1.4.1.25623.1.0.105611,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,952994b8-5432-46a9-bd1f-8a073f37d97f,"","Disable the weak encryption algorithms.","","The `arcfour` cipher is the Arcfour stream cipher with 128-bit keys.
+  The Arcfour cipher is believed to be compatible with the RC4 cipher [SCHNEIER]. Arcfour (and RC4) has problems
+  with weak keys, and should not be used anymore.
+
+  The `none` algorithm specifies that no encryption is to be done.
+  Note that this method provides no confidentiality protection, and it
+  is NOT RECOMMENDED to use it.
+
+  A vulnerability exists in SSH messages that employ CBC mode that may allow an attacker to recover plaintext from a block of ciphertext.","Check if remote ssh service supports Arcfour, none or CBC ciphers.
+Details:
+SSH Weak Encryption Algorithms Supported
+(OID: 1.3.6.1.4.1.25623.1.0.105611)
+Version used: $Revision: 13581 $
+","","","","https://tools.ietf.org/html/rfc4253#section-6.3, https://www.kb.cert.org/vuls/id/958563"
+176.28.50.165,vulnweb.com,465,tcp,4.0,Medium,"Workaround","SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability","The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size < 2048).","Server Temporary Key Size: 1024 bits",1.3.6.1.4.1.25623.1.0.106223,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,8b092d7b-a9e0-4400-99a3-519fd8d3d878,"An attacker might be able to decrypt the SSL/TLS communication offline.","Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group (see the references).
+
+  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.","","The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.","Checks the DHE temporary public key size.
+Details:
+SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerab...
+(OID: 1.3.6.1.4.1.25623.1.0.106223)
+Version used: $Revision: 12865 $
+","","","","https://weakdh.org/, https://weakdh.org/sysadmin.html"
+176.28.50.165,vulnweb.com,25,tcp,4.0,Medium,"Workaround","SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability","The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size < 2048).","Server Temporary Key Size: 1024 bits",1.3.6.1.4.1.25623.1.0.106223,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,fd53b561-7506-4890-a2dc-f6b6237b3e12,"An attacker might be able to decrypt the SSL/TLS communication offline.","Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group (see the references).
+
+  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.","","The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.","Checks the DHE temporary public key size.
+Details:
+SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerab...
+(OID: 1.3.6.1.4.1.25623.1.0.106223)
+Version used: $Revision: 12865 $
+","","","","https://weakdh.org/, https://weakdh.org/sysadmin.html"
+176.28.50.165,vulnweb.com,995,tcp,4.0,Medium,"Mitigation","SSL/TLS: Certificate Signed Using A Weak Signature Algorithm","The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+Signature Algorithm:  sha1WithRSAEncryption",1.3.6.1.4.1.25623.1.0.105880,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,12ad17f8-95be-47d7-b4b9-56560fa8def9,"","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.","","The following hashing algorithms used for signing SSL/TLS certificates are considered cryptographically weak
+  and not secure enough for ongoing use:
+
+  - Secure Hash Algorithm 1 (SHA-1)
+
+  - Message Digest 5 (MD5)
+
+  - Message Digest 4 (MD4)
+
+  - Message Digest 2 (MD2)
+
+  Beginning as late as January 2017 and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when visiting
+  web sites that use SHA-1 signed Secure Socket Layer (SSL) certificates.
+
+  NOTE: The script preference allows to set one or more custom SHA-1 fingerprints of CA certificates which are trusted by this routine. The fingerprints
+  needs to be passed comma-separated and case-insensitive:
+
+  Fingerprint1
+
+  or
+
+  fingerprint1,Fingerprint2","Check which hashing algorithm was used to sign the remote SSL/TLS certificate.
+Details:
+SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+(OID: 1.3.6.1.4.1.25623.1.0.105880)
+Version used: $Revision: 11524 $
+","","","","https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/"
+176.28.50.165,vulnweb.com,993,tcp,4.0,Medium,"Mitigation","SSL/TLS: Certificate Signed Using A Weak Signature Algorithm","The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+Signature Algorithm:  sha1WithRSAEncryption",1.3.6.1.4.1.25623.1.0.105880,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,5634baa2-7a25-4fd4-90f2-96ebe8285dfd,"","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.","","The following hashing algorithms used for signing SSL/TLS certificates are considered cryptographically weak
+  and not secure enough for ongoing use:
+
+  - Secure Hash Algorithm 1 (SHA-1)
+
+  - Message Digest 5 (MD5)
+
+  - Message Digest 4 (MD4)
+
+  - Message Digest 2 (MD2)
+
+  Beginning as late as January 2017 and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when visiting
+  web sites that use SHA-1 signed Secure Socket Layer (SSL) certificates.
+
+  NOTE: The script preference allows to set one or more custom SHA-1 fingerprints of CA certificates which are trusted by this routine. The fingerprints
+  needs to be passed comma-separated and case-insensitive:
+
+  Fingerprint1
+
+  or
+
+  fingerprint1,Fingerprint2","Check which hashing algorithm was used to sign the remote SSL/TLS certificate.
+Details:
+SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+(OID: 1.3.6.1.4.1.25623.1.0.105880)
+Version used: $Revision: 11524 $
+","","","","https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/"
+176.28.50.165,vulnweb.com,465,tcp,4.0,Medium,"Mitigation","SSL/TLS: Certificate Signed Using A Weak Signature Algorithm","The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+Signature Algorithm:  sha1WithRSAEncryption",1.3.6.1.4.1.25623.1.0.105880,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,5e5e4448-68a3-42f1-a771-2fffe46434ef,"","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.","","The following hashing algorithms used for signing SSL/TLS certificates are considered cryptographically weak
+  and not secure enough for ongoing use:
+
+  - Secure Hash Algorithm 1 (SHA-1)
+
+  - Message Digest 5 (MD5)
+
+  - Message Digest 4 (MD4)
+
+  - Message Digest 2 (MD2)
+
+  Beginning as late as January 2017 and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when visiting
+  web sites that use SHA-1 signed Secure Socket Layer (SSL) certificates.
+
+  NOTE: The script preference allows to set one or more custom SHA-1 fingerprints of CA certificates which are trusted by this routine. The fingerprints
+  needs to be passed comma-separated and case-insensitive:
+
+  Fingerprint1
+
+  or
+
+  fingerprint1,Fingerprint2","Check which hashing algorithm was used to sign the remote SSL/TLS certificate.
+Details:
+SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+(OID: 1.3.6.1.4.1.25623.1.0.105880)
+Version used: $Revision: 11524 $
+","","","","https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/"
+176.28.50.165,vulnweb.com,143,tcp,4.0,Medium,"Mitigation","SSL/TLS: Certificate Signed Using A Weak Signature Algorithm","The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+Signature Algorithm:  sha1WithRSAEncryption",1.3.6.1.4.1.25623.1.0.105880,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,c3841698-ae1c-4c64-b87c-154de817ef0f,"","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.","","The following hashing algorithms used for signing SSL/TLS certificates are considered cryptographically weak
+  and not secure enough for ongoing use:
+
+  - Secure Hash Algorithm 1 (SHA-1)
+
+  - Message Digest 5 (MD5)
+
+  - Message Digest 4 (MD4)
+
+  - Message Digest 2 (MD2)
+
+  Beginning as late as January 2017 and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when visiting
+  web sites that use SHA-1 signed Secure Socket Layer (SSL) certificates.
+
+  NOTE: The script preference allows to set one or more custom SHA-1 fingerprints of CA certificates which are trusted by this routine. The fingerprints
+  needs to be passed comma-separated and case-insensitive:
+
+  Fingerprint1
+
+  or
+
+  fingerprint1,Fingerprint2","Check which hashing algorithm was used to sign the remote SSL/TLS certificate.
+Details:
+SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+(OID: 1.3.6.1.4.1.25623.1.0.105880)
+Version used: $Revision: 11524 $
+","","","","https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/"
+176.28.50.165,vulnweb.com,110,tcp,4.0,Medium,"Mitigation","SSL/TLS: Certificate Signed Using A Weak Signature Algorithm","The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+Signature Algorithm:  sha1WithRSAEncryption",1.3.6.1.4.1.25623.1.0.105880,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,230bef6c-1bb2-471d-8522-e9c712e7133c,"","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.","","The following hashing algorithms used for signing SSL/TLS certificates are considered cryptographically weak
+  and not secure enough for ongoing use:
+
+  - Secure Hash Algorithm 1 (SHA-1)
+
+  - Message Digest 5 (MD5)
+
+  - Message Digest 4 (MD4)
+
+  - Message Digest 2 (MD2)
+
+  Beginning as late as January 2017 and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when visiting
+  web sites that use SHA-1 signed Secure Socket Layer (SSL) certificates.
+
+  NOTE: The script preference allows to set one or more custom SHA-1 fingerprints of CA certificates which are trusted by this routine. The fingerprints
+  needs to be passed comma-separated and case-insensitive:
+
+  Fingerprint1
+
+  or
+
+  fingerprint1,Fingerprint2","Check which hashing algorithm was used to sign the remote SSL/TLS certificate.
+Details:
+SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+(OID: 1.3.6.1.4.1.25623.1.0.105880)
+Version used: $Revision: 11524 $
+","","","","https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/"
+176.28.50.165,vulnweb.com,25,tcp,4.0,Medium,"Mitigation","SSL/TLS: Certificate Signed Using A Weak Signature Algorithm","The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#696E666F40706172616C6C656C732E636F6D,CN=Parallels Panel,OU=Parallels Panel,O=Parallels,L=Herndon,ST=Virginia,C=US
+Signature Algorithm:  sha1WithRSAEncryption",1.3.6.1.4.1.25623.1.0.105880,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,8b63ccb0-aca8-4cc9-9f7a-b320f7267559,"","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.","","The following hashing algorithms used for signing SSL/TLS certificates are considered cryptographically weak
+  and not secure enough for ongoing use:
+
+  - Secure Hash Algorithm 1 (SHA-1)
+
+  - Message Digest 5 (MD5)
+
+  - Message Digest 4 (MD4)
+
+  - Message Digest 2 (MD2)
+
+  Beginning as late as January 2017 and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when visiting
+  web sites that use SHA-1 signed Secure Socket Layer (SSL) certificates.
+
+  NOTE: The script preference allows to set one or more custom SHA-1 fingerprints of CA certificates which are trusted by this routine. The fingerprints
+  needs to be passed comma-separated and case-insensitive:
+
+  Fingerprint1
+
+  or
+
+  fingerprint1,Fingerprint2","Check which hashing algorithm was used to sign the remote SSL/TLS certificate.
+Details:
+SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+(OID: 1.3.6.1.4.1.25623.1.0.105880)
+Version used: $Revision: 11524 $
+","","","","https://blog.mozilla.org/security/2014/09/23/phasing-out-certificates-with-sha-1-based-signature-algorithms/"
+176.28.50.165,vulnweb.com,22,tcp,2.6,Low,"Mitigation","SSH Weak MAC Algorithms Supported","The remote SSH server is configured to allow weak MD5 and/or 96-bit MAC algorithms.","The following weak client-to-server MAC algorithms are supported by the remote service:
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96
+
+
+The following weak server-to-client MAC algorithms are supported by the remote service:
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96",1.3.6.1.4.1.25623.1.0.105610,"NOCVE",70843a32-f91c-430e-a409-53dd9f3ba597,"Immediate scan of IP vulnweb.com",2019-04-23T07:29:28Z,3305e203-124e-4ba6-bf97-b28634c5b77d,"","Disable the weak MAC algorithms.","","","
+Details:
+SSH Weak MAC Algorithms Supported
+(OID: 1.3.6.1.4.1.25623.1.0.105610)
+Version used: $Revision: 13581 $
+","","","",""
