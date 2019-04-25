@@ -3056,7 +3056,7 @@ References:
 "Form Submission","Form Crawl Scope","Maximum links to test in scope","User Agent","Request Parameter Set","Document Type","SmartScan Support","SmartScan Depth","Timeout Error Threshold","Unexpected Error Threshold","Scan Intensity","Bruteforce Option","Detection Scope","Credit Card Numbers Search","Social Security Numbers (US) Search","Custom Sensitive Content Search","Custom Performance","# of HTTP Threads","Delay Between Requests (ms)"
 "Post & Get","Do not include form action URI in uniqueness calculation","300","","Initial Parameters","Ignore common binary files","Disabled","5","100","300","Low","Minimal","Core","Off","Off","Off","Pre-defined","",""
 "Web Application Name","URL","Owner","Scope","Operating System"
-"VulnWeb","http://vulnweb.com/","Quim Montal (vunwh3qm)","Limit to URL hostname and specified domains","Linux 2.4-2.6 / Embedded Device / F5 Networks Big-IP / Linux 2.6"
+"VulnWeb","http://vulnweb.com/","qmontal (vunwh3qm)","Limit to URL hostname and specified domains","Linux 2.4-2.6 / Embedded Device / F5 Networks Big-IP / Linux 2.6"
 "Category","Severity","Level","Description"
 "Confirmed Vulnerability","1","Minimal","Basic information disclosure (e.g. web server type, programming language) might enable intruders to discover other vulnerabilities, but lack of this information does not make the vulnerability harder to find."
 "Confirmed Vulnerability","2","Medium","Intruders may be able to collect sensitive information about the application platform, such as the precise version of software used. With this information, intruders can easily exploit known vulnerabilities specific to software versions. Other types of sensitive information might disclose a few lines of source code or hidden directories."
