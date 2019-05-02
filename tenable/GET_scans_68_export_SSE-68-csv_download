@@ -5,7 +5,9 @@ quick even against a firewalled target.
 Note that SYN scans are less intrusive than TCP (full connect) scans
 against broken services, but they might cause problems for less robust
 firewalls and also leave unclosed connections on the remote target, if
-the network is loaded.","Protect your target with an IP filter.","","Port 143/tcp was found to be open","b698002c-c996-45bd-815e-4081c51bf6c6","Active","176.28.50.165","rs202995.rs.hosteurope.de","","Linux Kernel 2.6 on Ubuntu 10.04 (lucid)","","Port scanners","","","","","","","","","general-purpose","2019-03-30T10:19:27.672Z","2019-03-30T10:43:19.166Z"
+the network is loaded.","Protect your target with an IP filter.","","Port 143/tcp was found to be open","b698002c-c996-45bd-815e-4081c51bf6c6","Active","176.28.50.165","rs202995.rs.hosteurope.de","","Linux Kernel 2.6 on Ubuntu 10.04 (lucid)","02:e6:50:02:aa:9c
+02:e6:50:02:aa:9c
+02:e6:50:02:aa:9c","Port scanners","","","","","","","","","general-purpose","2019-03-30T10:19:27.672Z","2019-03-30T10:43:19.166Z"
 "11219","","0.0","None","176.28.50.165","TCP","993","Nessus SYN scanner","It is possible to determine which TCP ports are open.","This plugin is a SYN 'half-open' port scanner.  It shall be reasonably
 quick even against a firewalled target. 
 
